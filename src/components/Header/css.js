@@ -13,7 +13,7 @@ export const HeaderSection = styled.section`
   min-height: 100vh;
   padding: 5%;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     padding: 0;
     min-height: 600px;
 
@@ -30,8 +30,8 @@ export const HeaderSection = styled.section`
      background-image: linear-gradient(
       108deg,
       rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 45%,
-      transparent 45%
+      rgba(255, 255, 255, 1) 46%,
+      transparent 46%
     ),
     url('${headerImage}');
   }
