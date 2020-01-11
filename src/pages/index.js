@@ -1,9 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import NavBar from "../components/Nav/index"
 
 const IndexPage = () => (
-<h1>Hello World</h1>
+  <div>
+    <NavBar />
+    <h1>Hello World</h1>
+  </div>
 )
 
 export default IndexPage
