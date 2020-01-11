@@ -1,7 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import Header from "../components/Header"
+import Layout from "../components/layout"
 
-const IndexPage = () => <Header>Hello World</Header>
+const IndexPage = () => (
+  <Layout type="landing-page">
+    <h1>Content</h1>
+  </Layout>
+)
 
 export default IndexPage
