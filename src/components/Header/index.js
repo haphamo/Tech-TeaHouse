@@ -1,5 +1,5 @@
 import React from "react"
-import { HeaderSection, H1, H2, P, Button, HeaderContent } from "./css"
+import { HeaderSection, H1, H2, P, HeaderContent, HeaderLink } from "./css"
 import { object } from "prop-types"
 
 function Header({ headerData }) {
@@ -15,7 +15,9 @@ function Header({ headerData }) {
         <H1>{headerOneContent}</H1>
         {headerTwoContent && <H2>{headerTwoContent} </H2>}
         {paragraphContent && <P>{paragraphContent}</P>}
-        {buttonContent && <Button>{buttonContent}</Button>}
+        {buttonContent && (
+          <HeaderLink to="sponsor-us">{buttonContent}</HeaderLink>
+        )}
       </HeaderContent>
     </HeaderSection>
   )
