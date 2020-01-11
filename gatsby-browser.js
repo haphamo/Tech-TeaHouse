@@ -5,3 +5,35 @@
  */
 
 // You can delete this file if you're not using it
+const React = require("react")
+const { Helmet, HelmetProvider } = require("react-helmet-async")
+
+let helmetContext = {}
+
+exports.wrapRootElement = ({ element }) => {
+  return (
+    <HelmetProvider context={helmetContext}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Tech Teahouse</title>
+        <meta
+          name="description"
+          content="A tech group that promotes accessibility and diversity in technology"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css?family=Karla&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap"
+          rel="stylesheet"
+        ></link>
+      </Helmet>
+      {element}
+    </HelmetProvider>
+  )
+}
