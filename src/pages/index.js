@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import OurValues from '../components/OurValues/OurValues'
 
 const IndexPage = () => (
-<h1>Hello World</h1>
+  <OurValues />
 )
 
 export default IndexPage
