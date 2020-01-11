@@ -4,12 +4,15 @@ import logo from "../../images/Logo.png"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./styles.css"
 
-const StyleNav = styled.div``
+const StyleNav = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+`
 
 const StyledNavBrand = styled.div`
+  diplay: flex;
   padding-left: 2rem;
-  padding-top: 1rem;
-  float: left;
   img {
     width: 215px;
     height: 25px;
@@ -17,9 +20,8 @@ const StyledNavBrand = styled.div`
 `
 
 const StyleNavLinks = styled.ul`
+  display: flex;
   list-style: none;
-  text-align: right;
-  padding-top: 0.5rem;
 
   li {
     display: inline;
@@ -42,6 +44,7 @@ const StyledNavButton = styled.button`
   font-weight: bold;
   margin-left: 2rem;
   border-radius: 6px;
+  margin-top: 0;
   width: 195px;
   height: 55px;
   font-family: Rubik;
