@@ -1,61 +1,85 @@
 import React from "react"
-import styles from "./styles.css"
+import styled from "styled-components"
+import logo from "../../images/Logo.png"
 import "bootstrap/dist/css/bootstrap.min.css"
+import "./styles.css"
+
+const StyleNav = styled.div``
+
+const StyledNavBrand = styled.div`
+  padding-left: 2rem;
+  padding-top: 1rem;
+  float: left;
+  img {
+    width: 215px;
+    height: 25px;
+  }
+`
+
+const StyleNavLinks = styled.ul`
+  list-style: none;
+  text-align: right;
+  padding-top: 0.5rem;
+
+  li {
+    display: inline;
+    padding-left: 2rem;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: grey;
+    text-decoration: none;
+  }
+`
+const StyledNavButton = styled.button`
+  background-color: #255957;
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 2rem;
+  border-radius: 6px;
+  width: 195px;
+  height: 55px;
+  font-family: Rubik;
+  font-style: normal;
+  font-size: 17px;
+  text-align: center;
+  margin-right: 2rem;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #255957;
+  }
+`
 
 const index = () => {
   return (
-    <div className="container-fluid">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">
-          <img
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-            alt=""
-          />
+    <StyleNav>
+      <StyledNavBrand>
+        <a href="#">
+          <img src={logo} alt="Tech Teahouse Logo" />
         </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                HOME
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                ABOUT
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                UPCOMING EVENTS
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                GALLERY
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                CONTACT US
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+      </StyledNavBrand>
+      <StyleNavLinks>
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">Who We Are</a>
+        </li>
+        <li>
+          <a href="">What We Do</a>
+        </li>
+        <li>
+          <a href="">Get In Touch</a>
+        </li>
+        <StyledNavButton>Become a Partner!</StyledNavButton>
+      </StyleNavLinks>
+    </StyleNav>
   )
 }
 
