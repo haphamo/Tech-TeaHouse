@@ -4,8 +4,6 @@ import data from "../Header/data"
 import { string, object } from "prop-types"
 
 function Layout({ children, type }) {
-  console.log("hello")
-
   const headerData = data.find(data => data.type === type)
 
   return (
