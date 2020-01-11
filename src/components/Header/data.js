@@ -6,7 +6,7 @@ const data = [
     headerOneContent: "Tech Teahouse",
     headerTwoContent: "Greater Accessibility and Diversity in Tech",
     paragraphContent:
-      "Our goal is to champion greater accessibility and diversity across the tech industry by empowering individuals through education and events..",
+      "Our goal is to champion greater accessibility and diversity across the tech industry by empowering individuals through education and events.",
     buttonContent: "Become a Partner",
   },
   {
@@ -14,7 +14,7 @@ const data = [
     headerOneContent: "What We Do",
     headerTwoContent: "Greater Accessibility and Diversity in Tech",
     paragraphContent:
-      "Our goal is to champion greater accessibility and diversity across the tech industry by empowering individuals through education and events..",
+      "Our goal is to champion greater accessibility and diversity across the tech industry by empowering individuals through education and events.",
   },
   {
     type: "who-we-are",

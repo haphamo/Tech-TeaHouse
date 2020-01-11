@@ -20,6 +20,18 @@ exports.wrapRootElement = ({ element }) => {
           name="description"
           content="A tech group that promotes accessibility and diversity in technology"
         />
+        <link
+          href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css?family=Karla&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap"
+          rel="stylesheet"
+        ></link>
       </Helmet>
       {element}
     </HelmetProvider>
