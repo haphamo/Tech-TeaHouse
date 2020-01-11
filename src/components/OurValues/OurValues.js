@@ -4,8 +4,6 @@ import inclusivityImg from '../../../src/images/22-web_essential-512.png'
 import communityImg from '../../../src/images/iconfinder_05-web_essential_3401825.svg'
 import developmentImg from '../../../src/images/iconfinder_27-web_essential_3401845.svg'
 
-
-
 const CommunityValuesSection = styled.div`;
 background: #F5F5F5;
 display: flex;
@@ -25,12 +23,10 @@ font-weight: medium;
 font-size: 28px;
 color: #333333
 padding-top: 20px;
-
 `
 const ValueSection = styled.div`
 display: flex;
 flex-direction: row;
-justify-content: space-evenly;
 padding-top: 60px;
 `
 
@@ -47,11 +43,10 @@ font-weight: regular;
 line-height: 30px;
 color: #333333
 text-align: center;
-padding: 19px 0px 86px 0px;`
+padding: 19px 20px 86px 20px;`
 
 export default function OurValues() {
   return (
-    
     <CommunityValuesSection>
       <Headline1>Our Values</Headline1>
       <Headline2>An Inclusive Toronto-based Tech Community</Headline2>
@@ -73,6 +68,5 @@ export default function OurValues() {
         </Value>
       </ValueSection>
     </CommunityValuesSection>
-    
   )
 }
