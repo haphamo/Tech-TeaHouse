@@ -1,9 +1,10 @@
-import React from "react"
-import { Link } from "gatsby"
-
+import React from 'react';
+import FounderPage from '../components/Founders/index';
 
 const IndexPage = () => (
-<h1>Hello World</h1>
-)
+	<div>
+		<FounderPage />
+	</div>
+);
 
-export default IndexPage
+export default IndexPage;
