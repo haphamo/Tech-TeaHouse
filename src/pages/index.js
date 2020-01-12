@@ -1,5 +1,8 @@
 
 import React from "react"
+import { Link } from "gatsby"
+import NavBar from "../components/Nav/index"
+import Footer from "../components/footer/index"
 import Layout from "../components/layout"
 import OurValues from "../components/OurValues/OurValues"
 
