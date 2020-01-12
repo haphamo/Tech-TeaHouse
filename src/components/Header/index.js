@@ -8,9 +8,10 @@ function Header({ headerData }) {
     headerTwoContent,
     paragraphContent,
     buttonContent,
+    type,
   } = headerData
   return (
-    <HeaderSection>
+    <HeaderSection type={type}>
       <HeaderContent>
         <H1>{headerOneContent}</H1>
         {headerTwoContent && <H2>{headerTwoContent} </H2>}

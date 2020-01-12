@@ -6,7 +6,8 @@ import headerImage from "../../images/womenintech-8.jpg"
 export const HeaderSection = styled.section`
   display: flex;
   align-items: center;
-  background-image: url('${headerImage}');
+  background-image: ${({ type }) =>
+    type === "get-in-touch" ? null : `url('${headerImage}')`};
   background-position: center center;
   background-size: cover;
 
@@ -33,7 +34,7 @@ export const HeaderSection = styled.section`
       rgba(255, 255, 255, 1) 46%,
       transparent 46%
     ),
-    url('${headerImage}');
+    url('${headerImage}');    
   }
  `
 
@@ -45,8 +46,8 @@ export const HeaderContent = styled.div`
 
   @media screen and (min-width: 769px) {
     background-color: transparent;
-    text-align: left;
-    width: 50%;
+    text-align: ${({ type }) => (type === "get-in-touch" ? "center" : "left")};
+    width: ${({ type }) => (type === "get-in-touch" ? "100%" : "50%")};
     padding: 0;
     padding-left: 50px;
   }
