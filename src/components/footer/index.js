@@ -4,8 +4,6 @@ import insta from "../../images/instagram.png"
 import twitter from "../../images/twitter.png"
 import linkedin from "../../images/linkedin.png"
 
-import ReactSVG from "react-svg"
-
 const StyledFooter = styled.div`
   display: flex;
   justify-content: space-between;
