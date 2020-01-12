@@ -70,8 +70,7 @@ export const HeaderContent = styled.div`
 export const H1 = styled.h1`
   font-family: "Rubik", sans-serif;
   font-weight: 900;
-
-  margin-bottom: 1px;
+  margin-bottom: 20px;
   margin-top: 0;
   color: #255957;
   font-size: 3rem;
@@ -85,7 +84,7 @@ export const H2 = styled.h2`
   font-family: "Rubik", sans-serif;
   font-size: 1.75rem;
   font-weight: 500;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   margin-top: 0;
   color: #333333;
 
