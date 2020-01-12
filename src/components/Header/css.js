@@ -6,8 +6,8 @@ import headerImage from "../../images/womenintech-8.jpg"
 export const HeaderSection = styled.section`
   display: flex;
   align-items: center;
-  background-image: ${({ type }) =>
-    type === "get-in-touch" ? null : `url('${headerImage}')`};
+  background-image: ${({ pageName }) =>
+    pageName === "get-in-touch" ? null : `url('${headerImage}')`};
   background-position: center center;
   background-size: cover;
 
@@ -18,38 +18,46 @@ export const HeaderSection = styled.section`
     padding: 0;
     min-height: 600px;
 
-    background-image: linear-gradient(
+    background-image: ${({ pageName }) =>
+      pageName === "get-in-touch"
+        ? null
+        : `linear-gradient(
         108deg,
         rgba(255, 255, 255, 1) 0%,
         rgba(255, 255, 255, 1) 50%,
         transparent 50%
       ),
-    url('${headerImage}');
+    url('${headerImage}')`};
   }
-  
+
   @media screen and (min-width: 1200px) {
-     background-image: linear-gradient(
-      108deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 46%,
-      transparent 46%
-    ),
-    url('${headerImage}');    
+    background-image: ${({ pageName }) =>
+      pageName === "get-in-touch"
+        ? null
+        : `linear-gradient(
+        108deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 46%,
+        transparent 46%
+      ),
+    url('${headerImage}')`};
   }
- `
+`
 
 export const HeaderContent = styled.div`
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 32px 5%;
   text-align: center;
   width: 100%;
 
   @media screen and (min-width: 769px) {
     background-color: transparent;
-    text-align: ${({ type }) => (type === "get-in-touch" ? "center" : "left")};
-    width: ${({ type }) => (type === "get-in-touch" ? "100%" : "50%")};
+    text-align: ${({ pageName }) =>
+      pageName === "get-in-touch" ? "center" : "left"};
+    width: ${({ pageName }) => (pageName === "get-in-touch" ? "100%" : "50%")};
     padding: 0;
-    padding-left: 50px;
+    padding-left: ${({ pageName }) =>
+      pageName === "get-in-touch" ? "0" : "50px"};
   }
 `
 
@@ -75,7 +83,7 @@ export const H2 = styled.h2`
   color: #33333;
 
   @media screen and (min-width: 769px) {
-    width: 80%;
+    width: ${({ pageName }) => (pageName === "get-in-touch" ? "100%" : "80%")};
   }
 `
 
@@ -92,7 +100,7 @@ export const P = styled.p`
   margin-bottom: 32px;
 
   @media screen and (min-width: 769px) {
-    width: 75%;
+    width: ${({ pageName }) => (pageName === "get-in-touch" ? "100%" : "75%")};
     margin-bottom: 48px;
   }
 `

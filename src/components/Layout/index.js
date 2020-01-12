@@ -3,8 +3,8 @@ import Header from "../Header"
 import data from "../Header/data"
 import { string, object } from "prop-types"
 
-function Layout({ children, type }) {
-  const headerData = data.find(data => data.type === type)
+function Layout({ children, pageName }) {
+  const headerData = data.find(data => data.pageName === pageName)
 
   return (
     <>
