@@ -5,6 +5,8 @@
  */
 
 // You can delete this file if you're not using it
+
+require("normalize.css/normalize.css")
 const React = require("react")
 const { Helmet, HelmetProvider } = require("react-helmet-async")
 
