@@ -3,8 +3,9 @@ import styled from "styled-components"
 import insta from "../../images/instagram.png"
 import twitter from "../../images/twitter.png"
 import linkedin from "../../images/linkedin.png"
+import { Link } from "gatsby"
 
-const StyledFooter = styled.div`
+const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   color: #ffffff;
@@ -55,19 +56,19 @@ const StyledFooterRight = styled.div`
   }
 `
 
-const index = () => {
+const Footer = () => {
   return (
     <StyledFooter>
       <StyledFooterLeft>
         <ul>
           <li>
-            <a href="">Home</a>
+            <Link to="">Home</Link>
           </li>
           <li>
-            <a href="">Community Guidelines</a>
+            <Link to="">Community Guidelines</Link>
           </li>
           <li>
-            <a href="">Contact</a>
+            <Link to="">Contact</Link>
           </li>
         </ul>
       </StyledFooterLeft>
@@ -78,13 +79,13 @@ const index = () => {
         <p>Connect With Us</p>
         <ul>
           <li>
-            <img src={insta} alt="" />
+            <img src={insta} alt="instagram link" />
           </li>
           <li>
-            <img src={twitter} alt="" />
+            <img src={twitter} alt="twitter link" />
           </li>
           <li>
-            <img src={linkedin} alt="" />
+            <img src={linkedin} alt="Linkedin link" />
           </li>
         </ul>
       </StyledFooterRight>
@@ -92,4 +93,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Footer

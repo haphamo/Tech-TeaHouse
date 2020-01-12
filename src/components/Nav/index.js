@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import logo from "../../images/Logo.png"
+import { Link } from "gatsby"
 import "./styles.css"
 
 const StyleNav = styled.div`
@@ -62,22 +63,22 @@ const index = () => {
   return (
     <StyleNav>
       <StyledNavBrand>
-        <a href="#">
+        <Link to="#">
           <img src={logo} alt="Tech Teahouse Logo" />
-        </a>
+        </Link>
       </StyledNavBrand>
       <StyleNavLinks>
         <li>
-          <a href="">Home</a>
+          <Link to="">Home</Link>
         </li>
         <li>
-          <a href="">Who We Are</a>
+          <Link to="">Who We Are</Link>
         </li>
         <li>
-          <a href="">What We Do</a>
+          <Link to="">What We Do</Link>
         </li>
         <li>
-          <a href="">Get In Touch</a>
+          <Link to="">Get In Touch</Link>
         </li>
         <StyledNavButton>Become a Partner!</StyledNavButton>
       </StyleNavLinks>
