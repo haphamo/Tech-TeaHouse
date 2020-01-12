@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 100%;
-}
-
 body {
   font-size: 1rem;
   font-family: "Karla", sans-serif;
