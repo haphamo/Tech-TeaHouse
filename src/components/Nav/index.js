@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import logo from "../../images/Logo.png"
-import "bootstrap/dist/css/bootstrap.min.css"
 import "./styles.css"
 
 const StyleNav = styled.div`
