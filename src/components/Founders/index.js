@@ -3,34 +3,40 @@ import React from 'react';
 import Jen from '../../images/headshot-jen.jpg';
 import Therese from '../../images/headshot-therese.jpg';
 import Ruiting from '../../images/headshot-ruiting.jpg';
-//import CSS
-import './styles.css';
+
+import { Foundersh1, Foundersdiv, Foundersimg, Foundersp, Foundersa } from './styles.css.js';
 
 const FoundersIndexPage = () => (
 	<div>
-		<div class="Founders-div">
-			<h1 id="Founders-h1">The Founders</h1>
-		</div>
-		<div class="Founders-div">
+		<Foundersdiv>
+			<Foundersh1>
+				<h1 id="Founders-h1">The Founders</h1>
+			</Foundersh1>
+		</Foundersdiv>
+
+		<Foundersdiv>
 			<div>
-				<img class="Founders-img" src={Jen} alt="Jen" />
-				<a href="https://www.linkedin.com/in/jenfbeltran/">
-					<p class="Founders-p">Jen Beltran</p>
-				</a>
+				<Foundersimg src={Jen} alt="Jen" />
+
+				<Foundersp>
+					<Foundersa href="https://www.linkedin.com/in/jenfbeltran/">Jen Beltran</Foundersa>
+				</Foundersp>
 			</div>
 			<div>
-				<img class="Founders-img" src={Therese} alt="Therese" />
-				<a href="https://www.linkedin.com/in/thereseowusu/">
-					<p class="Founders-p">Therese Owusu</p>
-				</a>
+				<Foundersimg src={Therese} alt="Therese" />
+
+				<Foundersp>
+					<Foundersa href="https://www.linkedin.com/in/thereseowusu/">Therese Owusu</Foundersa>
+				</Foundersp>
 			</div>
 			<div>
-				<img class="Founders-img" src={Ruiting} alt="Ruiting" />
-				<a href="https://www.linkedin.com/in/ruitingli/">
-					<p class="Founders-p">Ruiting Li</p>
-				</a>
+				<Foundersimg src={Ruiting} alt="Ruiting" />
+
+				<Foundersp>
+					<Foundersa href="https://www.linkedin.com/in/ruitingli/">Ruiting Li</Foundersa>
+				</Foundersp>
 			</div>
-		</div>
+		</Foundersdiv>
 	</div>
 );
 
