@@ -57,7 +57,6 @@ const StyledFooterRight = styled.div`
 `
 
 const Footer = () => {
-  console.log("footer")
   return (
     <StyledFooter>
       <StyledFooterLeft>
