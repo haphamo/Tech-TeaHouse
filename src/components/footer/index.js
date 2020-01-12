@@ -5,7 +5,7 @@ import twitter from "../../images/twitter.png"
 import linkedin from "../../images/linkedin.png"
 import { Link } from "gatsby"
 
-const StyledFooter = styled.div`
+const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   color: #ffffff;
@@ -56,7 +56,8 @@ const StyledFooterRight = styled.div`
   }
 `
 
-const index = () => {
+const Footer = () => {
+  console.log("footer")
   return (
     <StyledFooter>
       <StyledFooterLeft>
@@ -93,4 +94,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Footer

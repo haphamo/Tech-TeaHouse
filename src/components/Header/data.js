@@ -32,7 +32,7 @@ const data = [
     pageName: "get-in-touch",
     headerOneContent: "Get in Touch",
     paragraphContent:
-      "Our goal is to champion greater accessibility and diversity across the tech industry by empowering individuals through education and events.",
+      "Thank you for your interest in supporting #TechTeahouse! We’re working together to build an inclusive Toronto tech community. Come join the conversation under our hashtag #TechTeahouse to stay up to date on new events and meetups near you. Let’s brew more diversi-tea together!",
   },
 ]
 

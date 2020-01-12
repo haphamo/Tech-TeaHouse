@@ -11,12 +11,14 @@ export const HeaderSection = styled.section`
   background-position: center center;
   background-size: cover;
 
-  min-height: 100vh;
+  min-height: ${({ pageName }) =>
+    pageName === "get-in-touch" ? "60vh" : `100vh`};
   padding: 5%;
 
   @media screen and (min-width: 769px) {
     padding: 0;
-    min-height: 600px;
+    min-height: ${({ pageName }) =>
+      pageName === "get-in-touch" ? "400px" : `600px`};
 
     background-image: ${({ pageName }) =>
       pageName === "get-in-touch"
@@ -49,6 +51,8 @@ export const HeaderContent = styled.div`
   padding: 32px 5%;
   text-align: center;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 
   @media screen and (min-width: 769px) {
     background-color: transparent;
@@ -58,12 +62,16 @@ export const HeaderContent = styled.div`
     padding: 0;
     padding-left: ${({ pageName }) =>
       pageName === "get-in-touch" ? "0" : "50px"};
+    align-items: ${({ pageName }) =>
+      pageName === "get-in-touch" ? "center" : "flex-start"};
   }
 `
 
 export const H1 = styled.h1`
   font-family: "Rubik", sans-serif;
   font-weight: 900;
+  line-height: 80px;
+
   margin-bottom: 20px;
   margin-top: 0;
   color: #255957;
@@ -78,8 +86,8 @@ export const H2 = styled.h2`
   font-family: "Rubik", sans-serif;
   font-size: 1.75rem;
   font-weight: 500;
-  margin-bottom: 20px;
-
+  margin-bottom: 16px;
+  margin-top: 0;
   color: #33333;
 
   @media screen and (min-width: 769px) {
@@ -89,8 +97,6 @@ export const H2 = styled.h2`
 
 export const P = styled.p`
   font-family: "Karla", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 1rem;
   letter-spacing: -0.015em;
 
@@ -98,16 +104,16 @@ export const P = styled.p`
 
   color: rgba(51, 51, 51, 0.8);
   margin-bottom: 32px;
-
+  margin-top: 0;
   @media screen and (min-width: 769px) {
-    width: ${({ pageName }) => (pageName === "get-in-touch" ? "100%" : "75%")};
-    margin-bottom: 48px;
+    width: 75%;
+    margin-bottom: ${({ pageName }) =>
+      pageName === "get-in-touch" ? "0" : "48px"};
   }
 `
 
 export const HeaderLink = styled(Link)`
   font-family: "Rubik", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 1rem;
   line-height: 20px;
