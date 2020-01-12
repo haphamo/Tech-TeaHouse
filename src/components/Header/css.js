@@ -70,9 +70,8 @@ export const HeaderContent = styled.div`
 export const H1 = styled.h1`
   font-family: "Rubik", sans-serif;
   font-weight: 900;
-  line-height: 80px;
 
-  margin-bottom: 20px;
+  margin-bottom: 1px;
   margin-top: 0;
   color: #255957;
   font-size: 3rem;
@@ -88,25 +87,23 @@ export const H2 = styled.h2`
   font-weight: 500;
   margin-bottom: 16px;
   margin-top: 0;
-  color: #33333;
+  color: #333333;
 
   @media screen and (min-width: 769px) {
-    width: ${({ pageName }) => (pageName === "get-in-touch" ? "100%" : "80%")};
+    width: ${({ pageName }) => (pageName === "get-in-touch" ? "100%" : "85%")};
   }
 `
 
 export const P = styled.p`
   font-family: "Karla", sans-serif;
-  font-size: 1rem;
   letter-spacing: -0.015em;
-
   line-height: 30px;
 
   color: rgba(51, 51, 51, 0.8);
   margin-bottom: 32px;
   margin-top: 0;
   @media screen and (min-width: 769px) {
-    width: 75%;
+    width: 80%;
     margin-bottom: ${({ pageName }) =>
       pageName === "get-in-touch" ? "0" : "48px"};
   }
@@ -115,7 +112,6 @@ export const P = styled.p`
 export const HeaderLink = styled(Link)`
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  font-size: 1rem;
   line-height: 20px;
 
   padding: 16px 26px;
@@ -125,5 +121,4 @@ export const HeaderLink = styled(Link)`
   color: #fff;
 
   cursor: pointer;
-  text-decoration: none;
 `
