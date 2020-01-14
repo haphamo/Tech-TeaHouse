@@ -19,21 +19,27 @@ const FoundersIndexPage = () => (
 				<Foundersimg src={Jen} alt="Jen" />
 
 				<Foundersp>
-					<Foundersa href="https://www.linkedin.com/in/jenfbeltran/">Jen Beltran</Foundersa>
+					<Foundersa target="_blank" href="https://www.linkedin.com/in/jenfbeltran/">
+						Jen Beltran
+					</Foundersa>
 				</Foundersp>
 			</div>
 			<div>
 				<Foundersimg src={Therese} alt="Therese" />
 
 				<Foundersp>
-					<Foundersa href="https://www.linkedin.com/in/thereseowusu/">Therese Owusu</Foundersa>
+					<Foundersa target="_blank" href="https://www.linkedin.com/in/thereseowusu/">
+						Therese Owusu
+					</Foundersa>
 				</Foundersp>
 			</div>
 			<div>
 				<Foundersimg src={Ruiting} alt="Ruiting" />
 
 				<Foundersp>
-					<Foundersa href="https://www.linkedin.com/in/ruitingli/">Ruiting Li</Foundersa>
+					<Foundersa target="_blank" href="https://www.linkedin.com/in/ruitingli/">
+						Ruiting Li
+					</Foundersa>
 				</Foundersp>
 			</div>
 		</Foundersdiv>

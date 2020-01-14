@@ -6,10 +6,19 @@ const Foundersh1 = styled.header`
 `;
 
 const Foundersdiv = styled.div`
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
+	@media (min-width: 651px) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	@media (max-width: 650px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 `;
 
 const Foundersimg = styled.img`
