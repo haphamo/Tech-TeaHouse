@@ -11,27 +11,35 @@ import inclusivityImg from '../../../src/images/22-web_essential-512.png'
 import communityImg from '../../../src/images/iconfinder_05-web_essential_3401825.svg'
 import developmentImg from '../../../src/images/iconfinder_27-web_essential_3401845.svg'
 
+let fixtures = [
+  { src: inclusivityImg,
+    headline: "Inclusivity",
+    desc: "We are an inclusive tech community that cares for our member's professional development" },
+  { src: communityImg,
+    headline: "Community",
+    desc: "We are an inclusive tech community that cares for our member's professional development" },
+  { src: developmentImg,
+    headline: "Development",
+    desc: "We are an inclusive tech community that cares for our member's professional development" }
+]
+
+
 export default function OurValues() {
+  const allValues = fixtures.map(value => {
+    return(
+      <Value key={value.headline}>
+        <IconImg classname={"icon"} src={value.src} alt={value.headline}/>
+        <Headline2>{value.headline}</Headline2>
+        <Body>{value.desc}</Body>
+    </Value>
+    )
+  })
   return (
     <CommunityValuesSection>
       <Headline1>Our Values</Headline1>
       <Headline2>An Inclusive Toronto-based Tech Community</Headline2>
       <ValueSection>
-        <Value>
-          <IconImg classname={"icon"} src={inclusivityImg} alt="inclusivity"/>
-          <Headline2>Inclusivity</Headline2>
-          <Body>We are an inclusive tech community that cares for our member's professional development</Body>
-        </Value>
-        <Value>
-          <img className={"icon"} style={{height: "116px"}}src={communityImg} alt="inclusivity"/>
-          <Headline2>Community</Headline2>
-          <Body>We connect members to upcoming tech events in the city.</Body>
-        </Value>
-        <Value>
-          <img className={"icon"} style={{height: "116px"}}src={developmentImg} alt="inclusivity"/>
-          <Headline2>Development</Headline2>
-          <Body>We organize workshops that empower members for their professional development.</Body>
-        </Value>
+        {allValues}
       </ValueSection>
     </CommunityValuesSection>
   )
