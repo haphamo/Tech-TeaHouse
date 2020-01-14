@@ -41,4 +41,8 @@ color: #333333
 text-align: center;
 padding: 19px 20px 86px 20px;`
 
-export { CommunityValuesSection, Headline1, Headline2, ValueSection, Value, Body };
+const IconImg = styled.img`
+height: 116px;
+`
+
+export { CommunityValuesSection, Headline1, Headline2, ValueSection, Value, Body, IconImg };
