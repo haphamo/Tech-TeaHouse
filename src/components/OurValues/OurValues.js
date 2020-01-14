@@ -8,10 +8,10 @@ import {
   Body,
   IconImg } from './OurValues.css'
 
-import { data } from './data'
+import { valueData, titleData } from './data'
 
 export default function OurValues() {
-  const allValues = data.map(value => {
+  const allValues = valueData.map(value => {
     return(
       <Value key={value.headline}>
         <IconImg classname={value.headline} src={value.src} alt={value.headline}/>
@@ -22,8 +22,8 @@ export default function OurValues() {
   })
   return (
     <CommunityValuesSection>
-      <Headline1>Our Values</Headline1>
-      <Headline2>An Inclusive Toronto-based Tech Community</Headline2>
+      <Headline1>{titleData.headline1}</Headline1>
+      <Headline2>{titleData.headline2}</Headline2>
       <ValueSection>
         {allValues}
       </ValueSection>

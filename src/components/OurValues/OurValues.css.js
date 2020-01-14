@@ -5,7 +5,8 @@ background: #F5F5F5;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding-top: 60px;`
+padding-top: 60px;
+`
 
 const Headline1 = styled.header`
 font-family: 'Rubik', sans-serif;
@@ -24,6 +25,10 @@ const ValueSection = styled.div`
 display: flex;
 flex-direction: row;
 padding-top: 60px;
+
+@media screen and (max-width: 769px) {
+  flex-direction: column;
+}
 `
 
 const Value = styled.div`
