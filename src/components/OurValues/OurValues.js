@@ -8,10 +8,10 @@ import {
   Body,
   IconImg } from './OurValues.css'
 
-import { valueData, titleData } from './data'
+import { valuesData, titleData } from './data'
 
 export default function OurValues() {
-  const allValues = valueData.map(value => {
+  const allValues = valuesData.map(value => {
     return(
       <Value key={value.headline}>
         <IconImg classname={value.headline} src={value.src} alt={value.headline}/>
