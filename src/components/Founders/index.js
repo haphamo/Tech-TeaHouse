@@ -1,43 +1,29 @@
 import React from 'react';
-//importing images
-import Jen from '../../images/headshot-jen.jpg';
-import Therese from '../../images/headshot-therese.jpg';
-import Ruiting from '../../images/headshot-ruiting.jpg';
-
 import { Foundersh1, Foundersdiv, Foundersimg, Foundersp, Foundersa } from './styles.css.js';
+import { FoundersProfile, FoundersTitle } from './data';
 
-const FoundersIndexPage = () => (
-	<div>
-		<Foundersdiv>
-			<Foundersh1>
-				<h1 id="Founders-h1">The Founders</h1>
-			</Foundersh1>
-		</Foundersdiv>
-
-		<Foundersdiv>
-			<div>
-				<Foundersimg src={Jen} alt="Jen" />
-
+const Founders = () => {
+	const foundersData = FoundersProfile.map((data) => {
+		return (
+			<div key={data.name}>
+				<Foundersimg src={data.photo} />
 				<Foundersp>
-					<Foundersa href="https://www.linkedin.com/in/jenfbeltran/">Jen Beltran</Foundersa>
+					<Foundersa href={data.profile} target="_blank">
+						{data.name}
+					</Foundersa>
 				</Foundersp>
 			</div>
-			<div>
-				<Foundersimg src={Therese} alt="Therese" />
+		);
+	});
 
-				<Foundersp>
-					<Foundersa href="https://www.linkedin.com/in/thereseowusu/">Therese Owusu</Foundersa>
-				</Foundersp>
-			</div>
-			<div>
-				<Foundersimg src={Ruiting} alt="Ruiting" />
+	return (
+		<div>
+			<Foundersdiv>
+				<Foundersh1>{FoundersTitle.headline}</Foundersh1>
+			</Foundersdiv>
+			<Foundersdiv>{foundersData}</Foundersdiv>
+		</div>
+	);
+};
 
-				<Foundersp>
-					<Foundersa href="https://www.linkedin.com/in/ruitingli/">Ruiting Li</Foundersa>
-				</Foundersp>
-			</div>
-		</Foundersdiv>
-	</div>
-);
-
-export default FoundersIndexPage;
+export default Founders;
