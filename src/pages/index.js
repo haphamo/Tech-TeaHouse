@@ -1,13 +1,15 @@
-import React from "react"
-import Layout from "../components/layout"
-import OurValues from "../components/OurValues/OurValues"
-import Founders from "../components/Founders"
+import React from 'react';
+import Layout from '../components/layout';
+import OurValues from '../components/OurValues/OurValues';
+import Founders from '../components/Founders';
+import OurStory from '../components/OurStory';
 // Refer to src/Header/data for the types with corresponding object to pass to layout.
 const IndexPage = () => (
-  <Layout pageName="landing-page">
-    <OurValues />
-    <Founders />
-  </Layout>
-)
+	<Layout pageName="landing-page">
+		<OurValues />
+		<Founders />
+		<OurStory />
+	</Layout>
+);
 
-export default IndexPage
+export default IndexPage;
