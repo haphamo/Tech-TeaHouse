@@ -75,7 +75,7 @@ const index = () => {
           <Link to="">Who We Are</Link>
         </li>
         <li>
-          <Link to="">What We Do</Link>
+          <Link to="/what-we-do">What We Do</Link>
         </li>
         <li>
           <Link to="">Get In Touch</Link>
