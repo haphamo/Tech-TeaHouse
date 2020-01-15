@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-  CommunityValuesSection,
+  Section,
   Headline1,
   Headline2,
   ValueSection,
@@ -21,12 +21,12 @@ export default function OurValues() {
     )
   })
   return (
-    <CommunityValuesSection>
+    <Section>
       <Headline1>{titleData.headline1}</Headline1>
       <Headline2>{titleData.headline2}</Headline2>
       <ValueSection>
         {allValues}
       </ValueSection>
-    </CommunityValuesSection>
+    </Section>
   )
 }
