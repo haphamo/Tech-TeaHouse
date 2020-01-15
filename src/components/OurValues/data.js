@@ -5,13 +5,13 @@ import developmentImg from '../../../src/images/iconfinder_27-web_essential_3401
 const valuesData = [
   { src: inclusivityImg,
     headline: "Inclusivity",
-    desc: "We are an inclusive tech community that cares for our member's professional development" },
+    desc: "We are an inclusive tech community that cares for our member's professional development." },
   { src: communityImg,
     headline: "Community",
-    desc: "We are an inclusive tech community that cares for our member's professional development" },
+    desc: "We connect members to upcoming tech events in the city." },
   { src: developmentImg,
     headline: "Development",
-    desc: "We are an inclusive tech community that cares for our member's professional development" }
+    desc: "We organize workshops to empower members for their professional development." }
 ]
 
 const titleData = {
