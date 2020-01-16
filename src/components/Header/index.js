@@ -8,13 +8,14 @@ function Header({ headerData }) {
     headerTwoContent,
     paragraphContent,
     buttonContent,
+    pageName,
   } = headerData
   return (
-    <HeaderSection>
-      <HeaderContent>
-        <H1>{headerOneContent}</H1>
-        {headerTwoContent && <H2>{headerTwoContent} </H2>}
-        {paragraphContent && <P>{paragraphContent}</P>}
+    <HeaderSection pageName={pageName}>
+      <HeaderContent pageName={pageName}>
+        <H1 pageName={pageName}>{headerOneContent}</H1>
+        {headerTwoContent && <H2 pageName={pageName}>{headerTwoContent} </H2>}
+        {paragraphContent && <P pageName={pageName}>{paragraphContent}</P>}
         {buttonContent && (
           <HeaderLink to="sponsor-us">{buttonContent}</HeaderLink>
         )}
