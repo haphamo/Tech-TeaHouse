@@ -2,6 +2,7 @@ import inclusivityImg from '../../../src/images/22-web_essential-512.png'
 import communityImg from '../../../src/images/iconfinder_05-web_essential_3401825.svg'
 import developmentImg from '../../../src/images/iconfinder_27-web_essential_3401845.svg'
 
+
 const valuesData = [
   { src: inclusivityImg,
     headline: "Inclusivity",
