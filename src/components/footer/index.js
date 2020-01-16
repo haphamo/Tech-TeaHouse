@@ -62,13 +62,13 @@ const Footer = () => {
       <StyledFooterLeft>
         <ul>
           <li>
-            <Link to="">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="">Community Guidelines</Link>
+            <Link to="/">Community Guidelines</Link>
           </li>
           <li>
-            <Link to="">Contact</Link>
+            <Link to="/">Contact</Link>
           </li>
         </ul>
       </StyledFooterLeft>
