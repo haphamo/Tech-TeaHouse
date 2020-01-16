@@ -17,7 +17,7 @@ function Header({ headerData }) {
         {headerTwoContent && <H2 pageName={pageName}>{headerTwoContent} </H2>}
         {paragraphContent && <P pageName={pageName}>{paragraphContent}</P>}
         {buttonContent && (
-          <HeaderLink to="sponsor-us">{buttonContent}</HeaderLink>
+          <HeaderLink to="/sponsor-us">{buttonContent}</HeaderLink>
         )}
       </HeaderContent>
     </HeaderSection>
