@@ -63,24 +63,24 @@ const index = () => {
   return (
     <StyleNav>
       <StyledNavBrand>
-        <Link to="#">
+        <Link to="/">
           <img src={logo} alt="Tech Teahouse Logo" />
         </Link>
       </StyledNavBrand>
       <StyleNavLinks>
         <li>
-          <Link to="">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="">Who We Are</Link>
+          <Link to="/who-we-are">Who We Are</Link>
         </li>
         <li>
-          <Link to="">What We Do</Link>
+          <Link to="/what-we-do">What We Do</Link>
         </li>
         <li>
-          <Link to="">Get In Touch</Link>
+          <Link to="/get-in-touch">Get In Touch</Link>
         </li>
-        <StyledNavButton>Become a Partner!</StyledNavButton>
+          <Link to="/sponsor-us"><StyledNavButton>Become a Partner!</StyledNavButton></Link>
       </StyleNavLinks>
     </StyleNav>
   )

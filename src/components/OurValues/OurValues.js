@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-  CommunityValuesSection,
+  Section,
   Headline1,
   Headline2,
   ValueSection,
@@ -11,6 +11,8 @@ import {
 import { valuesData, titleData } from './data'
 
 export default function OurValues() {
+
+  //console.log('this one', props.titleData)
   const allValues = valuesData.map(value => {
     return(
       <Value key={value.headline}>
@@ -21,12 +23,12 @@ export default function OurValues() {
     )
   })
   return (
-    <CommunityValuesSection>
+    <Section>
       <Headline1>{titleData.headline1}</Headline1>
       <Headline2>{titleData.headline2}</Headline2>
       <ValueSection>
         {allValues}
       </ValueSection>
-    </CommunityValuesSection>
+    </Section>
   )
 }
