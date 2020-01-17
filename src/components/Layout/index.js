@@ -6,7 +6,8 @@ import Nav from "./../Nav"
 import Footer from "./../footer"
 
 function Layout({ children, pageName }) {
-  const headerData = data.find(data => data.pageName === pageName)
+  const matchPageName = data => data.pageName === pageName
+  const headerData = data.find(matchPageName)
 
   return (
     <>
@@ -15,7 +16,7 @@ function Layout({ children, pageName }) {
         <Nav />
         <Header headerData={headerData} />
       </header>
-      {children}
+      <main>{children}</main>
       <Footer />
     </>
   )
