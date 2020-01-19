@@ -106,9 +106,15 @@ export const StyledSVG = styled(SVG)`
   display: block;
 `
 
+export const NavModalParagraph = styled.p`
+  text-decoration: underline;
+  cursor: pointer;
+`
+
 export const SocialParagraph = styled.p`
   margin-top: 0;
   text-align: center;
+
   @media screen and (min-width: 768px) {
     text-align: left;
   }

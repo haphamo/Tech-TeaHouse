@@ -1,4 +1,6 @@
 import React from "react"
+import useModal from "../../hooks/useModal"
+import Modal from "../Modal"
 import insta from "../../images/instagram.svg"
 import twitter from "../../images/twitter.svg"
 import linkedin from "../../images/linkedin2.svg"
@@ -15,9 +17,12 @@ import {
   SocialParagraph,
   SocialLink,
   UL,
+  NavModalParagraph,
 } from "./css"
 
 const Footer = () => {
+  const { isOpen, openModal, closeModal } = useModal()
+
   return (
     <StyledFooter>
       <StyledFooterLeft>
@@ -26,10 +31,12 @@ const Footer = () => {
             <FooterLink to="/">Home</FooterLink>
           </NavItem>
           <NavItem>
-            <FooterLink to="/">Community Guidelines</FooterLink>
+            <NavModalParagraph onClick={openModal}>
+              Community Guidelines
+            </NavModalParagraph>
           </NavItem>
           <NavItem>
-            <FooterLink to="/">Contact</FooterLink>
+            <FooterLink to="/get-in-touch">Contact</FooterLink>
           </NavItem>
         </UL>
       </StyledFooterLeft>
@@ -65,6 +72,11 @@ const Footer = () => {
           </SocialIconItem>
         </SocialIconList>
       </StyledFooterRight>
+      {isOpen && (
+        <Modal closeModal={closeModal}>
+          <h2>Modal</h2>
+        </Modal>
+      )}
     </StyledFooter>
   )
 }
