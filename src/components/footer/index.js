@@ -1,7 +1,7 @@
 import React from "react"
-import insta from "../../images/instagram.png"
-import twitter from "../../images/twitter.png"
-import linkedin from "../../images/linkedin.png"
+import insta from "../../images/instagram.svg"
+import twitter from "../../images/twitter.svg"
+import linkedin from "../../images/linkedin2.svg"
 import {
   StyledFooter,
   StyledFooterLeft,
@@ -12,6 +12,9 @@ import {
   FooterLink,
   SocialIconList,
   SocialIconItem,
+  StyledSVG,
+  SocialParagraph,
+  SocialLink,
 } from "./css"
 
 const Footer = () => {
@@ -34,16 +37,31 @@ const Footer = () => {
         <p>Copyright TechTeahouse 2020</p>
       </StyledFooterMiddle>
       <StyledFooterRight>
-        <p>Connect With Us</p>
+        <SocialParagraph>Connect With Us</SocialParagraph>
         <SocialIconList>
           <SocialIconItem>
-            <img src={insta} alt="instagram link" />
+            <SocialLink
+              href="https://www.linkedin.com/company/techteahouse/"
+              aria-label="Visit Tech Teahouse linked in page"
+            >
+              <StyledSVG src={linkedin} />
+            </SocialLink>
           </SocialIconItem>
           <SocialIconItem>
-            <img src={twitter} alt="twitter link" />
+            <SocialLink
+              href="https://twitter.com/TechTeahouse"
+              aria-label="Visit Tech Teahouse twitter page"
+            >
+              <StyledSVG src={twitter} />
+            </SocialLink>
           </SocialIconItem>
           <SocialIconItem>
-            <img src={linkedin} alt="Linkedin link" />
+            <SocialLink
+              href="https://www.linkedin.com/company/techteahouse/"
+              aria-label="Visit Tech Teahouse instagram page"
+            >
+              <StyledSVG src={insta} />
+            </SocialLink>
           </SocialIconItem>
         </SocialIconList>
       </StyledFooterRight>

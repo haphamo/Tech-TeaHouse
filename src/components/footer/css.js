@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
-
+import SVG from "react-inlinesvg"
 export const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
@@ -27,23 +27,7 @@ export const StyledFooterMiddle = styled.div`
 
 export const StyledFooterRight = styled.div`
   display: flex;
-  padding-right: 2rem;
   flex-direction: column;
-  
-
-  ul {
-    display: inline-flex;
-    padding: 0;
-
-  li {
-    list-style: none;
-    padding-left: 0.5rem;
-  }
-
-  img {
-    width: 40px;
-    height: 40px;
-  }
 `
 
 export const FooterLink = styled(Link)`
@@ -68,4 +52,28 @@ export const SocialIconItem = styled.li`
   &:not(:last-child) {
     margin-right: 40px;
   }
+
+  border: 1px solid white;
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  padding: 0;
+`
+
+export const SocialLink = styled.a`
+  display: block;
+  margin: auto;
+`
+
+export const StyledSVG = styled(SVG)`
+  fill: white;
+  width: 20px;
+  height: auto;
+  display: block;
+`
+
+export const SocialParagraph = styled.p`
+  margin-top: 0;
 `
