@@ -12,7 +12,7 @@ export const Grid = styled.ul`
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 5vw);
     grid-gap: 4px;
-    margin-top: 4px;
+    margin: 4px 0;
   }
 `
 
