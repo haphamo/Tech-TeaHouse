@@ -1,33 +1,60 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 import SVG from "react-inlinesvg"
+
 export const StyledFooter = styled.footer`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   color: #ffffff;
   background-color: #4b4e6d;
-  padding: 74px 81px;
-  font-weight: normal;
-  font-family: "Karla";
-  font-size: 1rem;
+  padding: 30px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 74px 81px;
+  }
 `
 
 export const StyledFooterLeft = styled.div`
   display: flex;
+  text-align: center;
+  padding-bottom: 14px;
 
+  justify-content: center;
   li {
     list-style: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0;
   }
 `
 
 export const StyledFooterMiddle = styled.div`
   text-align: center;
+  order: 2;
+  border-top: 1px solid white;
+  padding-top: 14px;
+  @media screen and (min-width: 768px) {
+    order: 0;
+    border-top: none;
+    padding: 0;
+  }
 `
 
 export const StyledFooterRight = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 30px;
+  border-top: 1px solid white;
+
+  @media screen and (min-width: 768px) {
+    border: none;
+  }
 `
 
 export const FooterLink = styled(Link)`
@@ -46,6 +73,11 @@ export const NavItem = styled.li`
 `
 export const SocialIconList = styled(UL)`
   display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
 `
 
 export const SocialIconItem = styled.li`
@@ -76,4 +108,8 @@ export const StyledSVG = styled(SVG)`
 
 export const SocialParagraph = styled.p`
   margin-top: 0;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 `

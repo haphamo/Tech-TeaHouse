@@ -7,7 +7,6 @@ import {
   StyledFooterLeft,
   StyledFooterMiddle,
   StyledFooterRight,
-  UL,
   NavItem,
   FooterLink,
   SocialIconList,
@@ -15,6 +14,7 @@ import {
   StyledSVG,
   SocialParagraph,
   SocialLink,
+  UL,
 } from "./css"
 
 const Footer = () => {
