@@ -1,6 +1,8 @@
 import React from "react"
-import { HeaderSection, H1, H2, P, HeaderContent, HeaderLink } from "./css"
+import { HeaderSection, HeaderH3, P, HeaderContent } from "./css"
 import { object } from "prop-types"
+import { H1 } from "../../theme/typography"
+import { CTALink } from "../../theme/components"
 
 function Header({ headerData }) {
   const {
@@ -14,10 +16,14 @@ function Header({ headerData }) {
     <HeaderSection pageName={pageName}>
       <HeaderContent pageName={pageName}>
         <H1 pageName={pageName}>{headerOneContent}</H1>
-        {headerTwoContent && <H2 pageName={pageName}>{headerTwoContent} </H2>}
+        {headerTwoContent && (
+          <HeaderH3 pageName={pageName}>{headerTwoContent} </HeaderH3>
+        )}
         {paragraphContent && <P pageName={pageName}>{paragraphContent}</P>}
         {buttonContent && (
-          <HeaderLink to="/sponsor-us">{buttonContent}</HeaderLink>
+          <CTALink variant="primary" to="/sponsor-us">
+            {buttonContent}
+          </CTALink>
         )}
       </HeaderContent>
     </HeaderSection>
