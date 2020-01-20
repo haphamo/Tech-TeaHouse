@@ -1,9 +1,9 @@
 import React from "react"
 import useModal from "../../hooks/useModal"
 import Modal from "../Modal"
-import insta from "../../images/instagram.svg"
-import twitter from "../../images/twitter.svg"
-import linkedin from "../../images/linkedin2.svg"
+import SocialIcon from "../SocialIcon"
+import { socialMedia } from "./data"
+
 import {
   StyledFooter,
   StyledFooterLeft,
@@ -12,10 +12,7 @@ import {
   NavItem,
   FooterLink,
   SocialIconList,
-  SocialIconItem,
-  StyledSVG,
   SocialParagraph,
-  SocialLink,
   UL,
   NavModalParagraph,
 } from "./css"
@@ -46,32 +43,20 @@ const Footer = () => {
       <StyledFooterRight>
         <SocialParagraph>Connect With Us</SocialParagraph>
         <SocialIconList>
-          <SocialIconItem>
-            <SocialLink
-              href="https://www.linkedin.com/company/techteahouse/"
-              aria-label="Visit Tech Teahouse linked in page"
-            >
-              <StyledSVG src={linkedin} />
-            </SocialLink>
-          </SocialIconItem>
-          <SocialIconItem>
-            <SocialLink
-              href="https://twitter.com/TechTeahouse"
-              aria-label="Visit Tech Teahouse twitter page"
-            >
-              <StyledSVG src={twitter} />
-            </SocialLink>
-          </SocialIconItem>
-          <SocialIconItem>
-            <SocialLink
-              href="https://www.linkedin.com/company/techteahouse/"
-              aria-label="Visit Tech Teahouse instagram page"
-            >
-              <StyledSVG src={insta} />
-            </SocialLink>
-          </SocialIconItem>
+          {socialMedia.map(social => {
+            const { ariaLabel, icon, linkTo, id } = social
+            return (
+              <SocialIcon
+                key={id}
+                icon={icon}
+                linkTo={linkTo}
+                ariaLabel={ariaLabel}
+              />
+            )
+          })}
         </SocialIconList>
       </StyledFooterRight>
+
       {isOpen && (
         <Modal closeModal={closeModal}>
           <h2>Modal</h2>
