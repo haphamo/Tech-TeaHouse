@@ -39,7 +39,7 @@ export const StyledFooterLeft = styled.div`
 export const StyledFooterMiddle = styled.div`
   text-align: center;
   order: 2;
-  border-top: 1px solid white;
+  border-top: 1px solid ${white};
   padding-top: 14px;
 
   @media screen and (min-width: 768px) {
@@ -53,7 +53,7 @@ export const StyledFooterRight = styled.div`
   display: flex;
   flex-direction: column;
   padding: 30px;
-  border-top: 1px solid white;
+  border-top: 1px solid ${white};
 
   @media screen and (min-width: 768px) {
     border: none;

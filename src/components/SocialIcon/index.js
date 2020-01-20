@@ -1,5 +1,6 @@
 import React from "react"
 import { SocialIconItem, SocialLink, StyledSVG } from "./css"
+
 function SocialIcon({ linkTo, ariaLabel, icon }) {
   return (
     <SocialIconItem>

@@ -1,5 +1,5 @@
 import React from "react"
-import { HeaderSection, HeaderH3, P, HeaderContent, HeaderLink } from "./css"
+import { HeaderSection, HeaderH3, P, HeaderContent } from "./css"
 import { object } from "prop-types"
 import { H1 } from "../../theme/typography"
 import { CTALink } from "../../theme/components"

@@ -1,13 +1,12 @@
 import React from "react"
 import { object, func } from "prop-types"
-import { ModalOuterBody, ModalInnerBody } from "./css"
-import { Button } from "../../theme/components"
+import { ModalOuterBody, ModalInnerBody, ModalButton } from "./css"
 function Modal({ children, closeModal }) {
   return (
     <ModalOuterBody onClick={closeModal}>
       <ModalInnerBody onClick={e => e.stopPropagation()}>
         {children}
-        <Button onClick={closeModal}>Close</Button>
+        <ModalButton onClick={closeModal}>Close</ModalButton>
       </ModalInnerBody>
     </ModalOuterBody>
   )

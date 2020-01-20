@@ -3,7 +3,7 @@ import useModal from "../../hooks/useModal"
 import Modal from "../Modal"
 import SocialIcon from "../SocialIcon"
 import { socialMedia } from "./data"
-
+import CommunityGuidelines from "../CommunityGuidelines"
 import {
   StyledFooter,
   StyledFooterLeft,
@@ -59,7 +59,7 @@ const Footer = () => {
 
       {isOpen && (
         <Modal closeModal={closeModal}>
-          <h2>Modal</h2>
+          <CommunityGuidelines />
         </Modal>
       )}
     </StyledFooter>
