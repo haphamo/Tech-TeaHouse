@@ -1,12 +1,15 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 import SVG from "react-inlinesvg"
+import { colors } from "../../theme/constants"
+
+const { violet, white } = colors
 
 export const StyledFooter = styled.footer`
   display: flex;
   flex-direction: column;
-  color: #ffffff;
-  background-color: #4b4e6d;
+  color: ${white};
+  background-color: ${violet};
   padding: 30px;
 
   @media screen and (min-width: 768px) {
@@ -39,6 +42,7 @@ export const StyledFooterMiddle = styled.div`
   order: 2;
   border-top: 1px solid white;
   padding-top: 14px;
+
   @media screen and (min-width: 768px) {
     order: 0;
     border-top: none;
@@ -59,7 +63,7 @@ export const StyledFooterRight = styled.div`
 
 export const FooterLink = styled(Link)`
   text-decoration: underline;
-  color: #fff;
+  color: ${white};
   cursor: pointer;
 `
 
@@ -100,7 +104,7 @@ export const SocialLink = styled.a`
 `
 
 export const StyledSVG = styled(SVG)`
-  fill: white;
+  fill: ${white};
   width: 20px;
   height: auto;
   display: block;
