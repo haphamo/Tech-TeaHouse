@@ -12,7 +12,6 @@ import { valuesData, titleData } from './data'
 
 export default function OurValues() {
 
-  //console.log('this one', props.titleData)
   const allValues = valuesData.map(value => {
     return(
       <Value key={value.headline}>
@@ -22,6 +21,7 @@ export default function OurValues() {
     </Value>
     )
   })
+
   return (
     <Section>
       <Headline1>{titleData.headline1}</Headline1>
