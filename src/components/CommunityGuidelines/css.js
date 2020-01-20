@@ -1,5 +1,3 @@
-import { Button } from "../../theme/components"
-
 import { H2, H3 } from "../../theme/typography"
 import styled from "styled-components"
 
