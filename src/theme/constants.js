@@ -5,4 +5,5 @@ export const colors = {
   paragraphBlack: "rgba(51, 51, 51, 0.8)",
   violet: "#4b4e6d",
   white: "#ffffff",
+  black: "#000000",
 }

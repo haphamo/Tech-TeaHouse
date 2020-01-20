@@ -1,5 +1,9 @@
 import styled from "styled-components"
 import { Button } from "../../theme/components"
+import { colors } from "../../theme/constants"
+
+const { black } = colors
+
 export const ModalOuterBody = styled.div`
   position: fixed;
   top: 0;
@@ -13,7 +17,7 @@ export const ModalOuterBody = styled.div`
 export const ModalInnerBody = styled.div`
   background: #fff;
   margin: auto;
-  color: #000;
+  color: ${black};
   width: 100%;
   height: 100%;
   padding: 32px;
