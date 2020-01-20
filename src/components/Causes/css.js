@@ -4,6 +4,8 @@ import EventPhoto from '../../images/womenintech-6.jpg';
 const CausesSection = styled.section`
 	@media (min-width: 850px) {
 		background-color: #ffffff;
+		position: relative;
+		padding: 5rem 1.25rem 8rem 1.25rem;
 	}
 
 	@media (max-width: 849px) {
@@ -13,15 +15,13 @@ const CausesSection = styled.section`
 	}
 `;
 
-const CausesPhoto = styled.section`
+const CausesImg = styled.section`
 	@media (min-width: 850px) {
 		background-image: url(${EventPhoto});
 		background-size: cover;
-		position: relative;
 		height: 500px;
 		width: 800px;
-		left: 5rem;
-		top: 6rem;
+		position: absolute;
 	}
 `;
 
@@ -32,10 +32,8 @@ const CausesTextSection = styled.section`
 		height: 450px;
 		width: 700px;
 		margin-left: 32rem;
-		top: -11rem;
-		margin-top: -12.5rem;
-		margin-bottom: -2.5rem;
 		padding: 3rem;
+		transform: translateY(1.5rem);
 	}
 
 	@media (min-width: 850px) and (max-width: 1024px) {
@@ -43,11 +41,9 @@ const CausesTextSection = styled.section`
 		position: relative;
 		height: 450px;
 		width: 700px;
-		margin-left: auto;
-		top: -11rem;
-		margin-top: -12.5rem;
-		margin-bottom: -2.5rem;
+		margin-left: 13rem;
 		padding: 3rem;
+		transform: translateY(1.5rem);
 	}
 
 	@media (max-width: 849px) {
@@ -57,28 +53,27 @@ const CausesTextSection = styled.section`
 	}
 `;
 
-const CausesH1 = styled.header`
-	position: center;
+const CausesH2 = styled.header`
 	font-family: 'Rubik', sans-serif;
 	color: #255957;
-	font-size: 56px;
+	font-size: 3.5rem;
 	font-weight: bold;
 `;
 
-const CausesH2 = styled.header`
-font-family: 'Rubik', sans-serif;
-font-weight: medium;
-font-size: 28px;
-color: #333333
-padding-top: 1rem;
+const CausesH3 = styled.header`
+	font-family: 'Rubik', sans-serif;
+	font-weight: medium;
+	font-size: 1.75rem;
+	color: #333333;
+	padding-top: 1rem;
 `;
 
 const CausesP = styled.p`
 	font-family: 'Karla', sans-serif;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: regular;
 	line-height: 2rem;
 	color: #333333;
 `;
 
-export { CausesSection, CausesPhoto, CausesTextSection, CausesH1, CausesH2, CausesP };
+export { CausesSection, CausesImg, CausesTextSection, CausesH2, CausesH3, CausesP };
