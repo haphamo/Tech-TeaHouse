@@ -1,31 +1,27 @@
 import styled from 'styled-components';
-import EventPhoto from '../../images/womenintech-6.jpg';
 
-const CausesSection = styled.section`
-	@media (min-width: 850px) {
-		background-color: #ffffff;
-		position: relative;
-		padding: 5rem 1.25rem 8rem 1.25rem;
-	}
-
-	@media (max-width: 849px) {
-		background-image: url(${EventPhoto});
-		background-position: center center;
-		background-size: cover;
-	}
+const CardSection = styled.section`
+	background-color: #ffffff;
+	position: relative;
+	padding: 5rem 1.25rem 8rem 1.25rem;
 `;
 
-const CausesImg = styled.section`
+const CardPhoto = styled.img`
 	@media (min-width: 850px) {
-		background-image: url(${EventPhoto});
-		background-size: cover;
 		height: 550px;
 		width: 850px;
 		position: absolute;
 	}
+
+	@media (max-width: 849px) {
+		height: 100%;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 `;
 
-const CausesTextSection = styled.section`
+const CardTextSection = styled.section`
 	@media (min-width: 1025px) {
 		background-color: #ffffff;
 		position: relative;
@@ -54,19 +50,19 @@ const CausesTextSection = styled.section`
 	}
 `;
 
-const CausesH2 = styled.h2`
+const CardH2 = styled.h2`
 	font-family: 'Rubik', sans-serif;
 	color: #255957;
 	font-size: 3.5rem;
 `;
 
-const CausesH3 = styled.h3`
+const CardH3 = styled.h3`
 	font-family: 'Rubik', sans-serif;
 	font-size: 1.75rem;
 	color: #333333;
 `;
 
-const CausesP = styled.p`
+const CardP = styled.p`
 	font-family: 'Karla', sans-serif;
 	font-size: 1rem;
 	font-weight: regular;
@@ -74,4 +70,4 @@ const CausesP = styled.p`
 	color: #333333;
 `;
 
-export { CausesSection, CausesImg, CausesTextSection, CausesH2, CausesH3, CausesP };
+export { CardSection, CardPhoto, CardTextSection, CardH2, CardH3, CardP };
