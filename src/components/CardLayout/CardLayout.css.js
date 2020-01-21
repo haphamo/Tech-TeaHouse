@@ -1,6 +1,3 @@
-// Styling for the "Our Values" section on the landing page
-// If you want to change  text, go to the data.js file
-
 import styled from "styled-components"
 import { colors } from "../../theme/constants"
 

@@ -6,10 +6,10 @@ import {
   ValueSection,
   Value, 
   Body,
-  IconImg } from './OurValues.css'
+  IconImg } from './CardLayout.css'
 
 import { Storyp } from "../OurStory/css"
-import { data } from "../OurValues/data"
+import { data } from "./data"
 
 
 export default function OurValues( props ) {

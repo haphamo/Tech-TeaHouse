@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
-import OurValues from "../components/OurValues/OurValues";
+import CardLayout from "../components/CardLayout/CardLayout";
 
 export default function SponsorUs() {
   return (
   <Layout pageName="sponsor-us">
-    <OurValues pageName='sponsor-us' />
+    <CardLayout pageName='sponsor-us' />
   </Layout>
 
   )
