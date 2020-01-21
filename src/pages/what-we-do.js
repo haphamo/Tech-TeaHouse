@@ -7,7 +7,7 @@ export default function WhatWeDo() {
 
   return (
   <Layout pageName="what-we-do">
-    
+    <OurValues pageName="what-we-do"/>
   </Layout>
 
   )

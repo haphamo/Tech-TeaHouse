@@ -19,9 +19,13 @@ export default function OurValues( props ) {
 
   // a function to determine if the card has icons
   const hasIcons = function() {
-    cardData.icons ? true : false
+    if(cardData.icons) {
+      return true
+    }
+    return false
   }
- 
+  
+  console.log(hasIcons())
   // if hasIcons is true then this function maps through icons to return the JSX for the component
   const handleIconData = function(){
     let allIcons = cardData.icons.map(value => {
@@ -43,9 +47,9 @@ export default function OurValues( props ) {
       {cardData.headerOne && <Headline1>{cardData.headerOne}</Headline1>}
       {cardData.headerTwo && <Headline2>{cardData.headerTwo}</Headline2>}
       {cardData.body && <Storyp>{cardData.body}</Storyp>}
-      {hasIcons && <ValueSection>
-      {handleIconData()}
-      </ValueSection>}
+      {hasIcons() && <ValueSection>
+                    {handleIconData()}
+                  </ValueSection>} 
     </Section>
   )
 }

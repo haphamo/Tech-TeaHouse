@@ -16,18 +16,22 @@ const Headline1 = styled.header`
 	color: #255957;
 	font-size: 3.5rem;
 	font-weight: bold;
+	text-align: centre;
 `;
 const Headline2 = styled.header`
   font-family: 'Rubik', sans-serif;
   font-weight: medium;
   font-size: 1.75rem;
   color: #333333
-  padding-top: 1rem;
+	padding: 1rem 0 3rem 0;
+	text-align: center;
 `;
+
 const ValueSection = styled.div`
 	display: flex;
 	flex-direction: row;
-	padding-top: 5rem;
+
+	width: 100%;
 
 	@media screen and (max-width: 769px) {
 		flex-direction: column;
@@ -38,7 +42,8 @@ const Value = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	letter-spacing: -0.015em;
+	
+	flex: 1;
 `;
 const Body = styled.div`
   font-family: 'Karla', sans-serif;

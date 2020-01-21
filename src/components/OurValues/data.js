@@ -24,6 +24,17 @@ const data = [
               desc: 'We organize workshops to empower members for their professional development.' }],
   },
   {
+    pageName: 'what-we-do',
+    headerOne: 'Building a More Inclusive Tech Community',
+    body: 'Tech Teahouse is building a more diverse and inclusive tech community in Toronto by increasing access to tech-focused events, providing a forum to foster meaningful connections, and hosting free tech skills workshops for underrepresented groups. Some of our initiatives include:',
+    icons: [{desc: 'Tech teahouse workshop series'},
+            {desc: 'Community Forum'},
+            {desc: 'Regular memeber meetups'},
+            {desc: 'Event notifications'},
+            {desc: 'Networking hub'},
+            {desc: 'Hackathon team building'}]
+  },
+  {
     pageName: 'who-we-are',
     headerOne: 'Our Community',
     body: 'Our members are reflective of the diverse backgrounds and experiences that comprise of the communities where we work and live. Our vision is to build and grow an inclusive Toronto tech community where members are given the opportunity for professional development.',
