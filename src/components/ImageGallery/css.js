@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import { H2 } from "../../theme/typography"
 export const Grid = styled.ul`
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ export const Grid = styled.ul`
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 5vw);
     grid-gap: 4px;
-    margin-top: 4px;
+    margin: 4px 0;
   }
 `
 
@@ -91,18 +91,10 @@ export const BannerPic = styled.li`
   }
 `
 
-export const SectionHeader = styled.h2`
-  font-family: "Rubik", sans-serif;
-  font-weight: 900;
+export const SectionHeader = styled(H2)`
   margin: 3rem 0;
-  color: #255957;
-  font-size: 2.5rem;
-  text-align: center;
-  padding: 0 2rem;
 
   @media screen and (min-width: 769px) {
-    font-size: 3.5rem;
-    padding: 0;
     margin: 6rem 0;
   }
 `

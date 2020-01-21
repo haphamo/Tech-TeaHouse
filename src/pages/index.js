@@ -1,19 +1,34 @@
-import React from "react"
-import Layout from "../components/layout"
-import OurValues from "../components/OurValues/OurValues"
-import Founders from "../components/Founders"
-import OurStory from "../components/OurStory"
-import ImageGallery from "../components/ImageGallery"
-import {cardData} from "../components/OurValues/data"
+import React from 'react';
+import Layout from '../components/layout';
+import OurValues from '../components/OurValues/OurValues';
+import CardImage from '../components/CardImage';
+import { Causes, Event } from '../components/CardImage/data';
+
 // Refer to src/Header/data for the types with corresponding object to pass to layout.
+const IndexPage = () => {
+	return (
+		<Layout pageName="landing-page">
+			<CardImage
+				photo={Event.photo}
+				alt={Event.alt}
+				headline={Event.headline}
+				headlineTwo={Event.headlineTwo}
+				pointOne={Event.pointOne}
+				pointTwo={Event.pointTwo}
+				pointThree={Event.pointThree}
+			/>
+			<OurValues pageName='landing-page'/>
+			<CardImage
+				photo={Causes.photo}
+				alt={Causes.alt}
+				headline={Causes.headline}
+				headlineTwo={Causes.headlineTwo}
+				pointOne={Causes.pointOne}
+				pointTwo={Causes.pointTwo}
+				pointThree={Causes.pointThree}
+			/>
+		</Layout>
+	);
+};
 
-const IndexPage = () => (
-  <Layout pageName="landing-page">
-    <OurValues pageName="landing-page"/>
-    <Founders />
-    <OurStory />
-    <ImageGallery />
-  </Layout>
-)
-
-export default IndexPage
+export default IndexPage;

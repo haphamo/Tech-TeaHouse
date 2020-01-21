@@ -1,22 +1,26 @@
 // Styling for the "Our Values" section on the landing page
 // If you want to change  text, go to the data.js file
 
-import styled from 'styled-components';
+import styled from "styled-components"
+import { colors } from "../../theme/constants"
+
+const { grey } = colors
 
 const Section = styled.div`
-	background: #f5f5f5;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 3.75rem;
-`;
+  background: ${grey};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3.75rem;
+  flex-wrap: wrap;
+`
 
 const Headline1 = styled.header`
 	font-family: 'Rubik', sans-serif;
 	color: #255957;
 	font-size: 3.5rem;
 	font-weight: bold;
-	text-align: centre;
+	text-align: center;
 `;
 const Headline2 = styled.header`
   font-family: 'Rubik', sans-serif;
@@ -33,10 +37,10 @@ const ValueSection = styled.div`
 
 	width: 100%;
 
-	@media screen and (max-width: 769px) {
-		flex-direction: column;
-	}
-`;
+  @media screen and (max-width: 769px) {
+    flex-direction: column;
+  }
+`
 
 const Value = styled.div`
 	display: flex;
@@ -52,10 +56,16 @@ const Body = styled.div`
   line-height: 2rem;
   color: #333333
   text-align: center;
-  padding: 1rem 2rem 5rem 2rem;`;
+  padding: 1rem 2rem 5rem 2rem;`
 
 const IconImg = styled.img`
 	height: 8rem;`;
-	
+  
+const Inititives = styled.div`
+  flex-wrap: wrap;
+  h5 {
+    flex: 1 1 30%;
+  }
+`
 
-export { Section, Headline1, Headline2, ValueSection, Value, Body, IconImg };
+export { Section, Headline1, Headline2, ValueSection, Value, Body, IconImg, Inititives}
