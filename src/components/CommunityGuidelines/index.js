@@ -1,38 +1,51 @@
-import React from "react"
-import { CommunityH2, CommunityH3 } from "./css"
+import React from 'react';
+import { CommunityH2, CommunityH3 } from './css';
 
 function CommunityGuidelines() {
-  return (
-    <section>
-      <CommunityH2>Modal Heading</CommunityH2>
-      <CommunityH3>Modal Subheading</CommunityH3>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptas
-        voluptatibus, vel pariatur similique eaque illum repellendus sapiente
-        dolor quidem praesentium cupiditate magnam perspiciatis totam, veniam
-        laboriosam! Voluptatum provident quas numquam illum minima, ea
-        praesentium illo. Officia molestiae doloremque beatae mollitia veniam
-        impedit accusamus porro earum blanditiis, provident debitis
-        exercitationem harum veritatis eos quibusdam similique. Excepturi et
-        provident optio hic dicta voluptatibus harum quam velit. Enim, impedit
-        iste. Explicabo provident aliquam deserunt magnam! Nobis incidunt
-        corrupti iste veritatis, quia veniam consectetur doloremque obcaecati
-        maxime facilis aperiam sunt? Deserunt, ullam, voluptatem ad ipsum nulla
-        similique dolorem assumenda consequuntur voluptatibus officia placeat
-        excepturi. Soluta temporibus ipsa vel repellendus expedita dolorum sit
-        qui, accusantium beatae eos, dolorem velit fugit molestias veniam culpa!
-        Dolor delectus cumque architecto, aspernatur maiores amet ipsum
-        explicabo necessitatibus porro dignissimos ab repellendus quae nostrum
-        ipsam et, consequuntur quisquam est nulla cum nihil voluptas eaque ipsa
-        deserunt quasi. Voluptatem non voluptas magni sunt fuga. Nostrum dolor
-        id neque beatae dolore libero fugit at assumenda voluptatibus obcaecati
-        maiores mollitia consequuntur quod excepturi aliquam sequi, quisquam
-        ducimus vel minus quam eveniet. Totam nam quisquam assumenda natus
-        consequatur iusto illum voluptate, excepturi aspernatur consequuntur
-        non, eius minus odio optio doloribus ut distinctio asperiores.
-      </p>
-    </section>
-  )
+	return (
+		<section>
+			<CommunityH2>Community Guidelines</CommunityH2>
+			<CommunityH3>Welcome to Tech Teahouse!</CommunityH3>
+
+			<h3>What We Love</h3>
+
+			<ul>
+				<li>• Attending events and conferences</li>
+				<li>• Meeting new people and making meaningful connections</li>
+				<li>
+					• Tech, entrepreneurship, and networking! - P.S. Working in tech is not required, just an active
+					interest!
+				</li>
+				<li>• All things free - food, drinks, events, discounts, etc...</li>
+			</ul>
+
+			<br />
+
+			<h3>A Few Guidelines</h3>
+
+			<p>
+				This community is an inclusive and safe environment. We expect anyone who joins to treat each other with
+				respect.
+			</p>
+
+			<p>We prohibit harassment of any kind. This includes but is not limited to the following:</p>
+
+			<ul>
+				<li>
+					• Offensive or unwelcome comments, that include slurs, negative stereotyping, discriminatory remarks
+					disguised as humor, based on gender identity and expression, sexual orientation, race, religion,
+					age, disability, ethnicity, disability and physical appearance
+				</li>
+				<li>• Misgendering or use of rejected names</li>
+				<li>•Threats of violence or incitement of violence</li>
+				<li>
+					•Unwelcome sexual attention, including suggestive comments, jokes of sexual nature, lewd remarks and
+					requests for sexual favors
+				</li>
+				<li>•Attempts at intimidation, retaliation or retribution</li>
+			</ul>
+		</section>
+	);
 }
 
-export default CommunityGuidelines
+export default CommunityGuidelines;
