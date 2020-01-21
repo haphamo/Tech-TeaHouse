@@ -13,12 +13,13 @@ function Layout({ children, pageName }) {
     <>
       <header>
         {/* Put Navigation component here */}
-        {/* <Nav /> */}
+        <Nav />
         <Header headerData={headerData} />
       </header>
-      <main>{children}</main>
+      {children}
       <Footer />
     </>
+  
   )
 }
 

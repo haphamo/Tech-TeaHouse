@@ -8,7 +8,7 @@ const Founders = () => {
 			<div key={data.name}>
 				<Foundersimg src={data.photo} />
 				<Foundersp>
-					<Foundersa href={data.profile} target="_blank">
+					<Foundersa href={data.profile} alt={data.name} target="_blank">
 						{data.name}
 					</Foundersa>
 				</Foundersp>
