@@ -2,6 +2,9 @@ import inclusivityImg from '../../../src/images/22-web_essential-512.png'
 import communityImg from '../../../src/images/iconfinder_05-web_essential_3401825.svg'
 import developmentImg from '../../../src/images/iconfinder_27-web_essential_3401845.svg'
 import personImg from '../../../src/images/iconfinder_44-web_essential_3401862.svg'
+import chartImg from '../../../src/images/iconfinder_chart_graph_analytics_sales_pie_chart-pie_graph-pie_4831043.svg'
+import starImg from '../../../src/images/iconfinder_03-web_essential_3401827.svg'
+
 
 
 // 5 objects in array for the different pages
@@ -21,11 +24,6 @@ const data = [
               desc: 'We organize workshops to empower members for their professional development.' }],
   },
   {
-    pageName: 'what-we-do',
-    headerOne: 'Building a more Inclusive Tech Community',
-    body: 'Tech Teahouse is building a more diverse and inclusive tech community in Toronto by increasing access to tech-focused events, providing a forum to foster meaningful connections, and hosting free tech skills workshops for underrepresented groups. Some of our initiatives include:'
-  },
-  {
     pageName: 'who-we-are',
     headerOne: 'Our Community',
     body: 'Our members are reflective of the diverse backgrounds and experiences that comprise of the communities where we work and live. Our vision is to build and grow an inclusive Toronto tech community where members are given the opportunity for professional development.',
@@ -33,10 +31,10 @@ const data = [
               src: personImg,
               headerTwo: '87% identify as Person of Color'
             },
-            { src: personImg,
+            { src: chartImg,
               headerTwo: '52% are women in Tech'
             },
-            { src: personImg,
+            { src: starImg,
               headerTwo: '200+ members'
             }]
   },
