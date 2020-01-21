@@ -19,8 +19,8 @@ const CausesImg = styled.section`
 	@media (min-width: 850px) {
 		background-image: url(${EventPhoto});
 		background-size: cover;
-		height: 500px;
-		width: 800px;
+		height: 550px;
+		width: 850px;
 		position: absolute;
 	}
 `;
@@ -29,20 +29,21 @@ const CausesTextSection = styled.section`
 	@media (min-width: 1025px) {
 		background-color: #ffffff;
 		position: relative;
-		height: 450px;
+		height: 500px;
 		width: 700px;
 		margin-left: 32rem;
-		padding: 3rem;
+		margin-right: 6.25rem;
+		padding: 1rem;
 		transform: translateY(1.5rem);
 	}
 
 	@media (min-width: 850px) and (max-width: 1024px) {
 		background-color: #ffffff;
 		position: relative;
-		height: 450px;
+		height: 500px;
 		width: 700px;
 		margin-left: 13rem;
-		padding: 3rem;
+		padding: 1rem;
 		transform: translateY(1.5rem);
 	}
 
@@ -57,15 +58,12 @@ const CausesH2 = styled.h2`
 	font-family: 'Rubik', sans-serif;
 	color: #255957;
 	font-size: 3.5rem;
-	font-weight: bold;
 `;
 
 const CausesH3 = styled.h3`
 	font-family: 'Rubik', sans-serif;
-	font-weight: medium;
 	font-size: 1.75rem;
 	color: #333333;
-	padding-top: 1rem;
 `;
 
 const CausesP = styled.p`
