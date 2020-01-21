@@ -53,14 +53,14 @@ const CausesTextSection = styled.section`
 	}
 `;
 
-const CausesH2 = styled.header`
+const CausesH2 = styled.h2`
 	font-family: 'Rubik', sans-serif;
 	color: #255957;
 	font-size: 3.5rem;
 	font-weight: bold;
 `;
 
-const CausesH3 = styled.header`
+const CausesH3 = styled.h3`
 	font-family: 'Rubik', sans-serif;
 	font-weight: medium;
 	font-size: 1.75rem;
