@@ -4,6 +4,12 @@ import developmentImg from '../../../src/images/iconfinder_27-web_essential_3401
 import personImg from '../../../src/images/iconfinder_44-web_essential_3401862.svg'
 import chartImg from '../../../src/images/iconfinder_chart_graph_analytics_sales_pie_chart-pie_graph-pie_4831043.svg'
 import starImg from '../../../src/images/iconfinder_03-web_essential_3401827.svg'
+import youthImg from '../../../src/images/iconfinder_06-web_essential_3401824.svg'
+import careerImg from '../../../src/images/iconfinder_31-web_essential_3401849.svg'
+import communityBuilding from '../../../src/images/iconfinder_14-web_essential_3401832.svg'
+import twitter from '../../../src/images/Twitter_Icon.png'
+import instagram from '../../../src/images/Instagram_Icon.png'
+import linkedIn from '../../../src/images/LinkedIn_Icon.png'
 
 
 
@@ -54,35 +60,34 @@ const data = [
     headerOne: 'Our Impact',
     body: 'We believe that investing in our local Toronto Tech community fosters innovation and we want to make professional development opportunities accessible. Therefore all contributions made will go directly to the following goals:',
     icons: [{
-              src: personImg,
+              src: youthImg,
               headerTwo: 'Youth Workshops',
               body: 'Host a tech skills workshop for youth of underrperesented groups.'
             },
-            { src: personImg,
+            { src: careerImg,
               headerTwo: 'Career Development',
               body: 'Our professional workshops offers attendees insight and knowledge on topics to that will help them advance their careers.'
             },
-            { src: personImg,
+            { src: communityBuilding,
               headerTwo: 'Community Building',
               body: 'We aim to build our community and double the number of Tech Teahouse active members by 2020.'
             }]
   },
   {
     pageName: 'get-in-touch',
-    headerOne: 'Get in Touch',
-    body: "Thank you for your interest in supporting #TechTeahouse! We’re working together to build an inclusive Toronto tech community. Come join the conversation under our hashtag #TechTeahouse to stay up to date on new events and meetups near you. Let’s brew more diversi-tea together!",
+    
     icons: [{
-              src: personImg,
+              src: linkedIn,
               headerTwo: 'LinkedIn',
               body: 'Be part of our network at /company/techteahouse/',
             },
             {
-              src: personImg,
+              src: twitter,
               headerTwo: 'Twitter',
               body: 'Follow us @TechTeahouse and share your opinion with #TechTeahouse'
             },
             {
-              src: personImg,
+              src: instagram,
               headerTwo: 'Instagram',
               body: 'Follow and tag us @TechTeahouse'
             }]

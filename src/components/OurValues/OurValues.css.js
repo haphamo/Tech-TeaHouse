@@ -11,8 +11,8 @@ const Section = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 3.75rem;
-  flex-wrap: wrap;
+  padding: 3.75rem 0 3.75rem 0;
+
 `
 
 const Headline1 = styled.header`
@@ -33,8 +33,8 @@ const Headline2 = styled.header`
 
 const ValueSection = styled.div`
 	display: flex;
-	flex-direction: row;
-
+  flex-direction: row;
+  flex-flow: wrap;
 	width: 100%;
 
   @media screen and (max-width: 769px) {
@@ -46,8 +46,8 @@ const Value = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
-	flex: 1;
+  flex: 1 1 30%;
+  padding-bottom: 1rem;
 `;
 const Body = styled.div`
   font-family: 'Karla', sans-serif;
@@ -61,11 +61,6 @@ const Body = styled.div`
 const IconImg = styled.img`
 	height: 8rem;`;
   
-const Inititives = styled.div`
-  flex-wrap: wrap;
-  h5 {
-    flex: 1 1 30%;
-  }
-`
 
-export { Section, Headline1, Headline2, ValueSection, Value, Body, IconImg, Inititives}
+
+export { Section, Headline1, Headline2, ValueSection, Value, Body, IconImg }

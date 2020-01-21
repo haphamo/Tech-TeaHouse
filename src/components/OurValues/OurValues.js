@@ -6,8 +6,7 @@ import {
   ValueSection,
   Value, 
   Body,
-  IconImg,
-  Inititives, } from './OurValues.css'
+  IconImg } from './OurValues.css'
 
 import { Storyp } from "../OurStory/css"
 import { data } from "../OurValues/data"
@@ -36,7 +35,8 @@ export default function OurValues( props ) {
           {value.headline && <Headline2>{value.headline}</Headline2>}
           {value.desc && <Body>{value.desc}</Body>}
           {value.headerTwo && <Headline2>{value.headerTwo}</Headline2>}
-          {value.initiatives && <Inititives><h5>{value.initiatives}</h5></Inititives>}
+          {value.initiatives && <h4>{value.initiatives}</h4>}
+          {value.body && <Body>{value.body}</Body>}
       </Value>
       )
     })
