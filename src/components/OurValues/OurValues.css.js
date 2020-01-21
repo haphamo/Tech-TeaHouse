@@ -62,5 +62,4 @@ const IconImg = styled.img`
 	height: 8rem;`;
   
 
-
 export { Section, Headline1, Headline2, ValueSection, Value, Body, IconImg }
