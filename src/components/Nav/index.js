@@ -1,54 +1,16 @@
 import React from "react"
-import styled from "styled-components"
 import { Link } from "gatsby"
 import logo from "../../images/Logo.png"
 
 import { CTALink } from "../../theme/components"
-import { colors } from "../../theme/constants"
 
-const { paragraphBlack, grey } = colors
-
-const StyleNav = styled.nav`
-  display: flex;
-  align-items: center;
-
-  background: ${grey};
-
-  box-shadow: 0px 10px 12px -4px rgba(0, 0, 0, 0.75);
-  z-index: 10;
-
-  margin-bottom: 20px;
-  padding: 20px 30px;
-`
-
-const StyledNavBrand = styled.div`
-  margin-right: auto;
-
-  img {
-    width: auto;
-    height: 30px;
-    display: block;
-  }
-`
-
-const StyleNavLinks = styled.ul`
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-`
-
-const NavListItem = styled.li`
-  padding: 0;
-  margin-right: 55px;
-  font-size: 1.1rem;
-`
-
-const NavLink = styled(Link)`
-  color: ${paragraphBlack};
-`
+import {
+  StyleNav,
+  StyledNavBrand,
+  StyleNavLinks,
+  NavListItem,
+  NavLink,
+} from "./css"
 
 const Nav = () => {
   return (
