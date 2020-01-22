@@ -21,7 +21,7 @@ const CardPhoto = styled.img`
   }
 `
 
-const CardTextSection = styled.section`
+const CardTextSection = styled.div`
   @media (min-width: 1025px) {
     background-color: #ffffff;
     position: relative;
