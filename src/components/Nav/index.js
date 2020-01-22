@@ -10,7 +10,6 @@ const { paragraphBlack, grey } = colors
 
 const StyleNav = styled.nav`
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   background: ${grey};
@@ -23,15 +22,18 @@ const StyleNav = styled.nav`
 `
 
 const StyledNavBrand = styled.div`
-  diplay: flex;
+  margin-right: auto;
+
   img {
-    width: 215px;
-    height: auto;
+    width: auto;
+    height: 30px;
+    display: block;
   }
 `
 
 const StyleNavLinks = styled.ul`
   display: flex;
+  justify-content: space-between;
   list-style: none;
   align-items: center;
   padding: 0;
@@ -39,8 +41,9 @@ const StyleNavLinks = styled.ul`
 `
 
 const NavListItem = styled.li`
-  margin-right: 60px;
   padding: 0;
+  margin-right: 55px;
+  font-size: 1.1rem;
 `
 
 const NavLink = styled(Link)`
@@ -51,7 +54,7 @@ const Nav = () => {
   return (
     <StyleNav>
       <StyledNavBrand>
-        <Link to="/">
+        <Link to="/" aria-label="Click to navigate to homepage">
           <img src={logo} alt="Tech Teahouse Logo" />
         </Link>
       </StyledNavBrand>
