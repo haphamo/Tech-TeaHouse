@@ -30,7 +30,6 @@ export const StyledNavBrand = styled.div`
 
 export const StyleNavLinks = styled.ul`
   display: flex;
-  // justify-content: space-between;
   list-style: none;
   align-items: center;
   padding: 0;
