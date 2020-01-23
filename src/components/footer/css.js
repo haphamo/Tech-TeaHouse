@@ -7,6 +7,7 @@ const { violet, white } = colors
 export const StyledFooter = styled.footer`
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   color: ${white};
   background-color: ${violet};
   padding: 30px;
