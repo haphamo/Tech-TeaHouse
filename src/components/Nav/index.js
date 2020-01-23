@@ -1,89 +1,42 @@
 import React from "react"
-import styled from "styled-components"
-import logo from "../../images/Logo.png"
 import { Link } from "gatsby"
-import "./styles.css"
+import logo from "../../images/Logo.png"
 
-const StyleNav = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1rem;
-`
+import { CTALink } from "../../theme/components"
 
-const StyledNavBrand = styled.div`
-  diplay: flex;
-  padding-left: 2rem;
-  img {
-    width: 215px;
-    height: 25px;
-  }
-`
+import {
+  StyleNav,
+  StyledNavBrand,
+  StyleNavLinks,
+  NavListItem,
+  NavLink,
+} from "./css"
 
-const StyleNavLinks = styled.ul`
-  display: flex;
-  list-style: none;
-
-  li {
-    display: inline;
-    padding-left: 2rem;
-  }
-
-  a {
-    color: black;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: grey;
-    text-decoration: none;
-  }
-`
-const StyledNavButton = styled.button`
-  background-color: #255957;
-  color: #ffffff;
-  font-weight: bold;
-  margin-left: 2rem;
-  border-radius: 6px;
-  margin-top: 0;
-  width: 195px;
-  height: 55px;
-  font-family: Rubik;
-  font-style: normal;
-  font-size: 17px;
-  text-align: center;
-  margin-right: 2rem;
-
-  &:hover {
-    background-color: #ffffff;
-    color: #255957;
-  }
-`
-
-const index = () => {
+const Nav = () => {
   return (
     <StyleNav>
       <StyledNavBrand>
-        <Link to="/">
+        <Link to="/" aria-label="Click to navigate to homepage">
           <img src={logo} alt="Tech Teahouse Logo" />
         </Link>
       </StyledNavBrand>
       <StyleNavLinks>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/who-we-are">Who We Are</Link>
-        </li>
-        <li>
-          <Link to="/what-we-do">What We Do</Link>
-        </li>
-        <li>
-          <Link to="/get-in-touch">Get In Touch</Link>
-        </li>
-          <Link to="/sponsor-us"><StyledNavButton>Become a Partner!</StyledNavButton></Link>
+        <NavListItem>
+          <NavLink to="/">Home</NavLink>
+        </NavListItem>
+        <NavListItem>
+          <NavLink to="/who-we-are">Who We Are</NavLink>
+        </NavListItem>
+        <NavListItem>
+          <NavLink to="/what-we-do">What We Do</NavLink>
+        </NavListItem>
+        <NavListItem>
+          <NavLink to="/get-in-touch">Get In Touch</NavLink>
+        </NavListItem>
+        <CTALink to="/sponsor-us">Become a Partner!</CTALink>
       </StyleNavLinks>
     </StyleNav>
   )
 }
 
-export default index
+export default Nav

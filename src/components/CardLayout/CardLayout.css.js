@@ -3,7 +3,7 @@ import { colors } from "../../theme/constants"
 
 const { grey } = colors
 
-const Section = styled.div`
+const Section = styled.section`
   background: ${grey};
   display: flex;
   flex-direction: column;
