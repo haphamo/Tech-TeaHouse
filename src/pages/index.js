@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
-import OurValues from '../components/OurValues/OurValues';
+import CardLayout from '../components/CardLayout/CardLayout';
 import CardImage from '../components/CardImage';
 import { Causes, Event } from '../components/CardImage/data';
 
@@ -17,7 +17,7 @@ const IndexPage = () => {
 				pointTwo={Event.pointTwo}
 				pointThree={Event.pointThree}
 			/>
-			<OurValues />
+			<CardLayout pageName='landing-page'/>
 			<CardImage
 				photo={Causes.photo}
 				alt={Causes.alt}

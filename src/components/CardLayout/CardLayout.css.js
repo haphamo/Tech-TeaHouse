@@ -1,6 +1,3 @@
-// Styling for the "Our Values" section on the landing page
-// If you want to change  text, go to the data.js file
-
 import styled from "styled-components"
 import { colors } from "../../theme/constants"
 
@@ -11,26 +8,31 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 3.75rem;
+  padding: 3.75rem 0 3.75rem 0;
+
 `
 
 const Headline1 = styled.header`
-  font-family: "Rubik", sans-serif;
-  color: #255957;
-  font-size: 3.5rem;
-  font-weight: bold;
-`
+	font-family: 'Rubik', sans-serif;
+	color: #255957;
+	font-size: 3.5rem;
+	font-weight: bold;
+	text-align: center;
+`;
 const Headline2 = styled.header`
   font-family: 'Rubik', sans-serif;
   font-weight: medium;
   font-size: 1.75rem;
   color: #333333
-  padding-top: 1rem;
-`
+	padding: 1rem 0 3rem 0;
+	text-align: center;
+`;
+
 const ValueSection = styled.div`
-  display: flex;
+	display: flex;
   flex-direction: row;
-  padding-top: 5rem;
+  flex-flow: wrap;
+	width: 100%;
 
   @media screen and (max-width: 769px) {
     flex-direction: column;
@@ -38,11 +40,12 @@ const ValueSection = styled.div`
 `
 
 const Value = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  letter-spacing: -0.015em;
-`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  flex: 1 1 30%;
+  padding-bottom: 1rem;
+`;
 const Body = styled.div`
   font-family: 'Karla', sans-serif;
   font-size: 16px;
@@ -53,7 +56,7 @@ const Body = styled.div`
   padding: 1rem 2rem 5rem 2rem;`
 
 const IconImg = styled.img`
-  height: 8rem;
-`
+	height: 8rem;`;
+  
 
 export { Section, Headline1, Headline2, ValueSection, Value, Body, IconImg }
