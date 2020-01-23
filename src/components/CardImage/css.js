@@ -4,6 +4,7 @@ const CardSection = styled.section`
   background-color: #ffffff;
   position: relative;
   padding: 5rem 1.25rem 8rem 1.25rem;
+  display: flex;
 `
 
 const CardPhoto = styled.img`
@@ -71,4 +72,15 @@ const CardP = styled.p`
   color: #333333;
 `
 
-export { CardSection, CardPhoto, CardTextSection, CardH2, CardH3, CardP }
+const Wrapper = styled.div`
+  margin: auto;
+`
+export {
+  CardSection,
+  CardPhoto,
+  CardTextSection,
+  CardH2,
+  CardH3,
+  CardP,
+  Wrapper,
+}
