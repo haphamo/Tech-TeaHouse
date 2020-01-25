@@ -129,9 +129,6 @@ export const CheckboxInput = styled.input`
     width: 100%;
     height 100%;
   }
-
-
-
 `
 export const MobileNavIcon = styled.span`
   height: 2px;
