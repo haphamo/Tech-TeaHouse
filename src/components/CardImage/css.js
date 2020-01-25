@@ -1,10 +1,13 @@
 import styled from "styled-components"
-
+import { breakpoints } from "../../theme/constants"
 const CardSection = styled.section`
   background-color: #ffffff;
   position: relative;
-  padding: 5rem 1.25rem 8rem 1.25rem;
   display: flex;
+
+  @media screen and (min-width: ${breakpoints.tablet}px) {
+    padding: 5rem 1.25rem 8rem 1.25rem;
+  }
 `
 
 const CardPhoto = styled.img`
@@ -46,7 +49,7 @@ const CardTextSection = styled.div`
 
   @media (max-width: 849px) {
     background: rgba(255, 255, 255, 0.75);
-    padding: 3rem;
+    padding: 3rem 0.5rem;
     text-align: center;
   }
 `

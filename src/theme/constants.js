@@ -7,3 +7,8 @@ export const colors = {
   white: "#ffffff",
   black: "#000000",
 }
+
+export const breakpoints = {
+  tablet: 768,
+  desktop: 1200,
+}
