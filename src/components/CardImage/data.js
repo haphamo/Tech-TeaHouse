@@ -20,7 +20,7 @@ const Event = {
 	headlineTwo : 'Women in Tech - Networking 101',
 	pointOne    : 'TTH will be hosting a panel and workshop with Shopify Toronto!',
 	pointTwo    :
-		'Panelists will discuss topics focused towards networking and branding yourself within a social situation.After, attendees have the opportunity to implement what was learned through a hands- on workshop in smaller groups.',
+		'Panelists will discuss topics focused towards networking and branding yourself within a social situation. After, attendees have the opportunity to implement what was learned through a hands- on workshop in smaller groups.',
 	pointThree  : 'Be sure to follow us on social media for updates! Tickets will be limited!'
 };
 
