@@ -53,9 +53,7 @@ const Nav = () => {
               <NavLink to="/get-in-touch">Get In Touch</NavLink>
             </NavListItem>
             {windowWidth > desktop ? (
-              <CTALink to="/sponsor-us" class="header-nav__link">
-                Become a Partner!
-              </CTALink>
+              <CTALink to="/sponsor-us">Become a Partner!</CTALink>
             ) : (
               <NavListItem>
                 <NavLink to="/sponsor-us">Become a Partner</NavLink>

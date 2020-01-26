@@ -3,6 +3,7 @@ import { HeaderSection, HeaderH3, P, HeaderContent } from "./css"
 import { object } from "prop-types"
 import { H1 } from "../../theme/typography"
 import { CTALink } from "../../theme/components"
+import { womenInTechEight as headerImage } from "../../images"
 
 function Header({ headerData }) {
   const {
@@ -11,9 +12,11 @@ function Header({ headerData }) {
     paragraphContent,
     buttonContent,
     pageName,
+    image = headerImage,
   } = headerData
+
   return (
-    <HeaderSection pageName={pageName}>
+    <HeaderSection pageName={pageName} image={image}>
       <HeaderContent pageName={pageName}>
         <H1 pageName={pageName}>{headerOneContent}</H1>
         {headerTwoContent && (

@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 import Header from "../Header"
 import data from "../Header/data"
-import { string, object } from "prop-types"
+import { string } from "prop-types"
 import Nav from "./../Nav"
 import Footer from "./../footer"
 
@@ -18,20 +18,17 @@ function Layout({ children, pageName }) {
     <>
       <Content>
         <header>
-          {/* Put Navigation component here */}
           <Nav />
           <Header headerData={headerData} />
         </header>
         <main>{children}</main>
       </Content>
-
       <Footer />
     </>
   )
 }
 
 Layout.propTypes = {
-  children: object.isRequired,
   pageName: string.isRequired,
 }
 

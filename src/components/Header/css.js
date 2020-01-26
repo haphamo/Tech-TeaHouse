@@ -1,13 +1,12 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { H3 } from "../../theme/typography"
-import headerImage from "../../images/womenintech-8.jpg"
 
 export const HeaderSection = styled.section`
   display: flex;
   align-items: center;
-  background-image: ${({ pageName }) =>
-    pageName === "get-in-touch" ? null : `url('${headerImage}')`};
+  background-image: ${({ pageName, image }) =>
+    pageName === "get-in-touch" ? null : `url('${image}')`};
   background-position: center center;
   background-size: cover;
 
@@ -20,7 +19,7 @@ export const HeaderSection = styled.section`
     min-height: ${({ pageName }) =>
       pageName === "get-in-touch" ? "400px" : `600px`};
 
-    background-image: ${({ pageName }) =>
+    background-image: ${({ pageName, image }) =>
       pageName === "get-in-touch"
         ? null
         : `linear-gradient(
@@ -29,11 +28,11 @@ export const HeaderSection = styled.section`
         rgba(255, 255, 255, 1) 50%,
         transparent 50%
       ),
-    url('${headerImage}')`};
+    url('${image}')`};
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: ${({ pageName }) =>
+    background-image: ${({ pageName, image }) =>
       pageName === "get-in-touch"
         ? null
         : `linear-gradient(
@@ -42,7 +41,7 @@ export const HeaderSection = styled.section`
         rgba(255, 255, 255, 1) 46%,
         transparent 46%
       ),
-    url('${headerImage}')`};
+    url('${image}')`};
   }
 `
 
