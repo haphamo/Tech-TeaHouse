@@ -1,4 +1,5 @@
 import React from "react"
+import uuid from "uuid"
 import {
   Section,
   Headline1,
@@ -17,25 +18,26 @@ export default function OurValues(props) {
   const matchPageName = data => data.pageName === props.pageName
   const cardData = data.find(matchPageName)
 
-  // a function to determine if the card has icons
-  const hasIcons = function() {
-    if (cardData.icons) {
-      return true
-    }
-    return false
-  }
+  const { pageName, icons } = cardData
 
   // if hasIcons is true then this function maps through icons to return the JSX for the component
   const handleIconData = function() {
-    let allIcons = cardData.icons.map(value => {
+    let allIcons = icons.map(value => {
       return (
-        <Value key={value.headline}>
+        <Value key={uuid()}>
           {value.src && (
-            <IconImg classname={value.src} src={value.src} alt={value.src} />
+            <IconImg
+              className={value.src}
+              src={value.src}
+              alt={value.src}
+              pageName={pageName}
+            />
           )}
           {value.headline && <Headline2>{value.headline}</Headline2>}
           {value.desc && <Body>{value.desc}</Body>}
-          {value.headerTwo && <Headline2>{value.headerTwo}</Headline2>}
+          {value.headerTwo && (
+            <Headline2 pageName={pageName}>{value.headerTwo}</Headline2>
+          )}
           {value.initiatives && <h4>{value.initiatives}</h4>}
           {value.body && <Body>{value.body}</Body>}
         </Value>
@@ -49,7 +51,7 @@ export default function OurValues(props) {
       {cardData.headerOne && <Headline1>{cardData.headerOne}</Headline1>}
       {cardData.headerTwo && <Headline2>{cardData.headerTwo}</Headline2>}
       {cardData.body && <Storyp>{cardData.body}</Storyp>}
-      {hasIcons() && <ValueSection>{handleIconData()}</ValueSection>}
+      {cardData.icons && <ValueSection>{handleIconData()}</ValueSection>}
     </Section>
   )
 }

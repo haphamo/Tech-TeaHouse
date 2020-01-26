@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { colors } from "../../theme/constants"
-
-const { grey } = colors
+import { H2, H3 } from "../../theme/typography"
+const { grey, lightBlack, primaryGreen } = colors
 
 const Section = styled.section`
   background: ${grey};
@@ -11,20 +11,14 @@ const Section = styled.section`
   padding: 3.75rem 0 3.75rem 0;
 `
 
-const Headline1 = styled.header`
-  font-family: "Rubik", sans-serif;
-  color: #255957;
-  font-size: 3.5rem;
-  font-weight: bold;
-  text-align: center;
+const Headline1 = styled(H2)`
+  margin-bottom: 1.5rem;
 `
-const Headline2 = styled.header`
-  font-family: 'Rubik', sans-serif;
-  font-weight: medium;
-  font-size: 1.75rem;
-  color: #333333
-	padding: 1rem 0 3rem 0;
-	text-align: center;
+const Headline2 = styled(H3)`
+  text-align: center;
+  margin: 0;
+  color: ${({ pageName }) =>
+    pageName === "get-in-touch" ? primaryGreen : lightBlack};
 `
 
 const ValueSection = styled.div`
@@ -46,16 +40,15 @@ const Value = styled.div`
   padding-bottom: 1rem;
 `
 const Body = styled.div`
-  font-family: 'Karla', sans-serif;
-  font-size: 16px;
-  font-weight: regular;
   line-height: 2rem;
-  color: #333333
   text-align: center;
-  padding: 1rem 2rem 5rem 2rem;`
+  padding: 1rem 2rem 5rem 2rem;
+`
 
 const IconImg = styled.img`
   height: 8rem;
+  margin: ${({ pageName }) =>
+    pageName === "get-in-touch" ? "0" : "3.5rem 0 2rem 0"};
 `
 
 export { Section, Headline1, Headline2, ValueSection, Value, Body, IconImg }

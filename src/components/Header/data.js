@@ -1,3 +1,5 @@
+import { meetupOne, meetupTwo, womenInTechEight } from "../../images"
+
 // TAKE pageName PROP FROM LAYOUT.. COMPARE IT AGAINST data.pageName
 
 const data = [
@@ -8,6 +10,7 @@ const data = [
     paragraphContent:
       "Our goal is to champion greater accessibility and diversity across the tech industry by empowering individuals through education and events.",
     buttonContent: "Become a Partner",
+    image: womenInTechEight,
   },
   {
     pageName: "what-we-do",
@@ -15,12 +18,14 @@ const data = [
     headerTwoContent: "Greater Accessibility and Diversity in Tech",
     paragraphContent:
       "Our goal is to champion greater accessibility and diversity across the tech industry by empowering individuals through education and events.",
+    image: meetupOne,
   },
   {
     pageName: "who-we-are",
     headerOneContent: "We're Tech Teahouse",
     paragraphContent:
       "We are an inclusive tech community that cares for our members’ professional development. We connect members to upcoming tech events in the city.",
+    image: meetupTwo,
   },
   {
     pageName: "sponsor-us",
