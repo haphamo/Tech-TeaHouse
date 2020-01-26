@@ -1,7 +1,8 @@
 import styled from "styled-components"
 import { Button } from "../../theme/components"
-import { colors } from "../../theme/constants"
+import { colors, breakpoints } from "../../theme/constants"
 
+const { tablet } = breakpoints
 const { black } = colors
 
 export const ModalOuterBody = styled.div`
@@ -15,19 +16,21 @@ export const ModalOuterBody = styled.div`
   display: flex;
 `
 export const ModalInnerBody = styled.div`
-  background: #fff;
-  margin: auto;
   color: ${black};
+  background: #fff;
+
   width: 100%;
   height: 100%;
+  margin: auto;
   padding: 32px;
+
   overflow-y: scroll;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${breakpoints}px) {
     width: 80%;
     height: 550px;
     padding: 96px;

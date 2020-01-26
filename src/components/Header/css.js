@@ -1,10 +1,14 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { H3 } from "../../theme/typography"
+import { breakpoints } from "../../theme/constants"
+
+const { desktop } = breakpoints
 
 export const HeaderSection = styled.section`
   display: flex;
   align-items: center;
+
   background-image: ${({ pageName, image }) =>
     pageName === "get-in-touch" ? null : `url('${image}')`};
   background-position: center center;
@@ -31,7 +35,7 @@ export const HeaderSection = styled.section`
     url('${image}')`};
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: ${desktop}px) {
     background-image: ${({ pageName, image }) =>
       pageName === "get-in-touch"
         ? null
@@ -81,6 +85,7 @@ export const P = styled.p`
 
   margin-bottom: 32px;
   margin-top: 0;
+
   @media screen and (min-width: 769px) {
     width: 80%;
     margin-bottom: ${({ pageName }) =>

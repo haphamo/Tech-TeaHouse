@@ -1,4 +1,9 @@
-import { meetupOne, meetupTwo, womenInTechEight } from "../../images"
+import {
+  meetupOne,
+  meetupTwo,
+  womenInTechEight,
+  womenInTechSeven,
+} from "../../images"
 
 // TAKE pageName PROP FROM LAYOUT.. COMPARE IT AGAINST data.pageName
 
@@ -32,6 +37,7 @@ const data = [
     headerOneContent: "Partner with us",
     paragraphContent:
       "As a grassroots community organization, we are 100% funded by the generosity of corporate & community partners. Partnering with Tech Teahouse enables us to deliver free educational workshops to underrepresented groups, and powers programs that directly support greater diversity and collaboration within Toronto’s thriving tech sector. Become a partner and help us create a more diverse and inclusive tech community for all.",
+    image: womenInTechSeven,
   },
   {
     pageName: "get-in-touch",

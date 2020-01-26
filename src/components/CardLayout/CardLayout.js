@@ -8,6 +8,7 @@ import {
   Value,
   Body,
   IconImg,
+  SocialLink,
 } from "./CardLayout.css"
 
 import { Storyp } from "../OurStory/css"
@@ -18,28 +19,35 @@ export default function OurValues(props) {
   const matchPageName = data => data.pageName === props.pageName
   const cardData = data.find(matchPageName)
 
-  const { pageName, icons } = cardData
+  const { pageName, icons, headerOne, headerTwo, body } = cardData
 
   // if hasIcons is true then this function maps through icons to return the JSX for the component
   const handleIconData = function() {
     let allIcons = icons.map(value => {
+      const { link, headline, desc, headerTwo, src, initiatives, body } = value
       return (
         <Value key={uuid()}>
-          {value.src && (
-            <IconImg
-              className={value.src}
-              src={value.src}
-              alt={value.src}
-              pageName={pageName}
-            />
+          {src && (
+            <SocialLink href={link} target="_blank">
+              <IconImg
+                className={src}
+                src={src}
+                alt={src}
+                pageName={pageName}
+              />
+            </SocialLink>
           )}
-          {value.headline && <Headline2>{value.headline}</Headline2>}
-          {value.desc && <Body>{value.desc}</Body>}
-          {value.headerTwo && (
-            <Headline2 pageName={pageName}>{value.headerTwo}</Headline2>
+          {headline && <Headline2>{headline}</Headline2>}
+          {desc && <Body>{desc}</Body>}
+          {headerTwo && (
+            <Headline2 pageName={pageName}>
+              <SocialLink href={link} target="_blank">
+                {headerTwo}
+              </SocialLink>
+            </Headline2>
           )}
-          {value.initiatives && <h4>{value.initiatives}</h4>}
-          {value.body && <Body>{value.body}</Body>}
+          {initiatives && <h4>{initiatives}</h4>}
+          {body && <Body>{body}</Body>}
         </Value>
       )
     })
@@ -48,10 +56,10 @@ export default function OurValues(props) {
 
   return (
     <Section>
-      {cardData.headerOne && <Headline1>{cardData.headerOne}</Headline1>}
-      {cardData.headerTwo && <Headline2>{cardData.headerTwo}</Headline2>}
-      {cardData.body && <Storyp>{cardData.body}</Storyp>}
-      {cardData.icons && <ValueSection>{handleIconData()}</ValueSection>}
+      {headerOne && <Headline1>{headerOne}</Headline1>}
+      {headerTwo && <Headline2>{headerTwo}</Headline2>}
+      {body && <Storyp>{body}</Storyp>}
+      {icons && <ValueSection>{handleIconData()}</ValueSection>}
     </Section>
   )
 }

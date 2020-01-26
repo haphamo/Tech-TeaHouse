@@ -1,5 +1,9 @@
 import styled from "styled-components"
 import { H2 } from "../../theme/typography"
+import { breakpoints } from "../../theme/constants"
+
+const { tablet } = breakpoints
+
 export const Grid = styled.ul`
   margin: 0;
   padding: 0;
@@ -7,7 +11,7 @@ export const Grid = styled.ul`
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${tablet}px) {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 5vw);
@@ -29,7 +33,7 @@ export const Img = styled.img`
     object-position: center center;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${tablet}px) {
     width: 100%;
     height: 100%;
     max-height: auto;
@@ -37,13 +41,13 @@ export const Img = styled.img`
 `
 
 export const PicOne = styled.li`
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${tablet}px) {
     grid-row: 1/6;
     grid-column: 1/4;
   }
 `
 export const PicTwo = styled.li`
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${tablet}px) {
     grid-row: 1/6;
     grid-column: 4/8;
   }
@@ -51,33 +55,33 @@ export const PicTwo = styled.li`
 export const PicThree = styled.li`
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${tablet}px) {
     grid-row: 1/5;
     grid-column: 8/10;
     display: block;
   }
 `
 export const PicFour = styled.li`
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${tablet}px) {
     grid-row: 6/-1;
     grid-column: 1/6;
   }
 `
 export const PicFive = styled.li`
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${tablet}px) {
     grid-column: 6/8;
     grid-row: 6/-1;
   }
 `
 
 export const PicSix = styled.li`
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${tablet}px) {
     grid-column: 8/-1;
     grid-row: 5/-1;
   }
 `
 export const PicSeven = styled.li`
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${tablet}px) {
     grid-column: 10/-1;
     grid-row: 1/5;
   }
@@ -86,7 +90,7 @@ export const BannerPic = styled.li`
   height: 35vw;
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${tablet}px) {
     display: block;
   }
 `
@@ -94,7 +98,7 @@ export const BannerPic = styled.li`
 export const SectionHeader = styled(H2)`
   margin: 3rem 0;
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: ${tablet}px) {
     margin: 6rem 0;
   }
 `

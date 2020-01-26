@@ -130,6 +130,7 @@ export const CheckboxInput = styled.input`
 export const MobileNavIcon = styled.span`
   height: 2px;
   width: 30px;
+  
   display: block;
   background: ${white};
   margin: auto;
