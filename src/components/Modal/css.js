@@ -30,7 +30,7 @@ export const ModalInnerBody = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: ${breakpoints}px) {
+  @media screen and (min-width: ${tablet}px) {
     width: 80%;
     height: 550px;
     padding: 96px;
