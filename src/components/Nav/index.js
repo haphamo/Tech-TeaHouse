@@ -41,22 +41,32 @@ const Nav = () => {
         <NavElement>
           <StyleNavLinks>
             <NavListItem>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/" activeClassName="is-active">
+                Home
+              </NavLink>
             </NavListItem>
             <NavListItem>
-              <NavLink to="/who-we-are">Who We Are</NavLink>
+              <NavLink to="/who-we-are" activeClassName="is-active">
+                Who We Are
+              </NavLink>
             </NavListItem>
             <NavListItem>
-              <NavLink to="/what-we-do">What We Do</NavLink>
+              <NavLink to="/what-we-do" activeClassName="is-active">
+                What We Do
+              </NavLink>
             </NavListItem>
             <NavListItem>
-              <NavLink to="/get-in-touch">Get In Touch</NavLink>
+              <NavLink to="/get-in-touch" activeClassName="is-active">
+                Get In Touch
+              </NavLink>
             </NavListItem>
             {windowWidth > desktop ? (
               <CTALink to="/sponsor-us">Become a Partner!</CTALink>
             ) : (
               <NavListItem>
-                <NavLink to="/sponsor-us">Become a Partner</NavLink>
+                <NavLink to="/sponsor-us" activeClassName="is-active">
+                  Become a Partner
+                </NavLink>
               </NavListItem>
             )}
           </StyleNavLinks>

@@ -19,13 +19,17 @@ export const StyleNav = styled.section`
     display: block;
     margin-bottom: 20px;
     padding: 20px 30px;
+
     display: flex;
     align-items: center;
     justify-content: start;
+
     background: ${grey};
     box-shadow: 0px 10px 12px -4px rgba(0, 0, 0, 0.75);
+
     z-index: 10;
     opacity: 1;
+
     width: auto;
     height: auto;
     position: relative;
@@ -130,6 +134,7 @@ export const CheckboxInput = styled.input`
 export const MobileNavIcon = styled.span`
   height: 2px;
   width: 30px;
+  
   display: block;
   background: ${white};
   margin: auto;

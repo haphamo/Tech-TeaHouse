@@ -1,10 +1,15 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { H3 } from "../../theme/typography"
+import { breakpoints, colors } from "../../theme/constants"
+
+const { desktop, tablet } = breakpoints
+const { primaryGreen, white } = colors
 
 export const HeaderSection = styled.section`
   display: flex;
   align-items: center;
+
   background-image: ${({ pageName, image }) =>
     pageName === "get-in-touch" ? null : `url('${image}')`};
   background-position: center center;
@@ -14,7 +19,7 @@ export const HeaderSection = styled.section`
     pageName === "get-in-touch" ? "60vh" : `100vh`};
   padding: 5%;
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: ${tablet}px) {
     padding: 0;
     min-height: ${({ pageName }) =>
       pageName === "get-in-touch" ? "400px" : `600px`};
@@ -31,7 +36,7 @@ export const HeaderSection = styled.section`
     url('${image}')`};
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: ${desktop}px) {
     background-image: ${({ pageName, image }) =>
       pageName === "get-in-touch"
         ? null
@@ -53,7 +58,7 @@ export const HeaderContent = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: ${tablet}px) {
     background-color: transparent;
     text-align: ${({ pageName }) =>
       pageName === "get-in-touch" ? "center" : "left"};
@@ -70,7 +75,7 @@ export const HeaderH3 = styled(H3)`
   margin-bottom: 20px;
   margin-top: 0;
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: ${tablet}px) {
     width: ${({ pageName }) => (pageName === "get-in-touch" ? "100%" : "85%")};
   }
 `
@@ -81,7 +86,8 @@ export const P = styled.p`
 
   margin-bottom: 32px;
   margin-top: 0;
-  @media screen and (min-width: 769px) {
+
+  @media screen and (min-width: ${tablet}px) {
     width: 80%;
     margin-bottom: ${({ pageName }) =>
       pageName === "get-in-touch" ? "0" : "48px"};
@@ -95,9 +101,9 @@ export const HeaderLink = styled(Link)`
 
   padding: 16px 26px;
 
-  background: #255957;
+  background: ${primaryGreen};
   border-radius: 6px;
-  color: #fff;
+  color: ${white};
 
   cursor: pointer;
 `

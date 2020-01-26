@@ -1,11 +1,16 @@
 import styled from "styled-components"
-import { breakpoints } from "../../theme/constants"
+import { H2 } from "../../theme/typography"
+import { colors, breakpoints } from "../../theme/constants"
+const { desktop } = breakpoints
+
+const { white } = colors
+
 const CardSection = styled.section`
-  background-color: #ffffff;
+  background-color: ${white};
   position: relative;
   display: flex;
 
-  @media screen and (min-width: ${breakpoints.tablet}px) {
+  @media screen and (min-width: ${desktop}px) {
     padding: 5rem 1.25rem 8rem 1.25rem;
   }
 `
@@ -27,7 +32,7 @@ const CardPhoto = styled.img`
 
 const CardTextSection = styled.div`
   @media (min-width: 1025px) {
-    background-color: #ffffff;
+    background-color: ${white};
     position: relative;
     height: 500px;
     width: 700px;
@@ -38,7 +43,7 @@ const CardTextSection = styled.div`
   }
 
   @media (min-width: 850px) and (max-width: 1024px) {
-    background-color: #ffffff;
+    background-color: ${white};
     position: relative;
     height: 500px;
     width: 700px;
@@ -54,36 +59,20 @@ const CardTextSection = styled.div`
   }
 `
 
-const CardH2 = styled.h2`
-  font-family: "Rubik", sans-serif;
-  color: #255957;
-  font-size: 3.5rem;
+const CardH2 = styled(H2)`
   margin-top: 0;
-`
+  text-align: center;
 
-const CardH3 = styled.h3`
-  font-family: "Rubik", sans-serif;
-  font-size: 1.75rem;
-  color: #333333;
+  @media screen and (min-width: ${desktop}px) {
+    text-align: left;
+  }
 `
 
 const CardP = styled.p`
-  font-family: "Karla", sans-serif;
-  font-size: 1rem;
-  font-weight: regular;
   line-height: 2rem;
-  color: #333333;
 `
 
 const Wrapper = styled.div`
   margin: auto;
 `
-export {
-  CardSection,
-  CardPhoto,
-  CardTextSection,
-  CardH2,
-  CardH3,
-  CardP,
-  Wrapper,
-}
+export { CardSection, CardPhoto, CardTextSection, CardH2, CardP, Wrapper }

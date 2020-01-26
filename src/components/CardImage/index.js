@@ -1,25 +1,34 @@
 import React from "react"
+import { H3 } from "../../theme/typography"
 import {
   CardSection,
   CardPhoto,
   CardTextSection,
   CardH2,
-  CardH3,
   CardP,
   Wrapper,
 } from "./css"
 
 const CardImage = props => {
+  const {
+    alt,
+    headline,
+    headlineTwo,
+    pointOne,
+    pointTwo,
+    pointThree,
+    photo,
+  } = props
   return (
     <CardSection>
       <Wrapper>
-        <CardPhoto src={props.photo} alt={props.alt} />
+        <CardPhoto src={photo} alt={alt} />
         <CardTextSection>
-          <CardH2>{props.headline}</CardH2>
-          <CardH3>{props.headlineTwo}</CardH3>
-          <CardP>{props.pointOne}</CardP>
-          <CardP>{props.pointTwo}</CardP>
-          <CardP>{props.pointThree}</CardP>
+          <CardH2>{headline}</CardH2>
+          <H3>{headlineTwo}</H3>
+          <CardP>{pointOne}</CardP>
+          <CardP>{pointTwo}</CardP>
+          <CardP>{pointThree}</CardP>
         </CardTextSection>
       </Wrapper>
     </CardSection>

@@ -51,4 +51,18 @@ const IconImg = styled.img`
     pageName === "get-in-touch" ? "0" : "3.5rem 0 2rem 0"};
 `
 
-export { Section, Headline1, Headline2, ValueSection, Value, Body, IconImg }
+const SocialLink = styled.a`
+  color: inherit;
+  display: block;
+`
+
+export {
+  Section,
+  Headline1,
+  Headline2,
+  ValueSection,
+  Value,
+  Body,
+  IconImg,
+  SocialLink,
+}
