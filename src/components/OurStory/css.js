@@ -28,9 +28,6 @@ const Storydiv = styled.div`
 `
 
 const Storyp = styled.p`
-font-family: 'Karla', sans-serif;
-font-size: 16px;
-font-weight: regular;
 line-height: 30px;
 color: #333333
 text-align: center;

@@ -3,7 +3,7 @@ import { Button } from "../../theme/components"
 import { colors, breakpoints } from "../../theme/constants"
 
 const { tablet } = breakpoints
-const { black } = colors
+const { black, white } = colors
 
 export const ModalOuterBody = styled.div`
   position: fixed;
@@ -17,7 +17,7 @@ export const ModalOuterBody = styled.div`
 `
 export const ModalInnerBody = styled.div`
   color: ${black};
-  background: #fff;
+  background: ${white};
 
   width: 100%;
   height: 100%;

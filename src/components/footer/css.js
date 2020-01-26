@@ -10,8 +10,10 @@ export const StyledFooter = styled.footer`
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+
   color: ${white};
   background-color: ${violet};
+
   padding: 30px;
 
   @media screen and (min-width: ${tablet}px) {
@@ -28,6 +30,7 @@ export const StyledFooterLeft = styled.div`
   padding-bottom: 14px;
 
   justify-content: center;
+
   li {
     list-style: none;
   }
