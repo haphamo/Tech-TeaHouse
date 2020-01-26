@@ -37,18 +37,19 @@ export const StyledNavBrand = styled.div`
   justify-content: center;
 
   margin-bottom: 2rem;
-  transform: translateY(-30px);
 
   @media screen and (min-width: ${desktop}px) {
     margin-right: auto;
     margin-bottom: 0;
-    transform: translateY(0);
   }
 
   img {
     width: auto;
-    height: 30px;
     display: block;
+    height: 32px;
+    @media screen and (min-width: ${desktop}px) {
+      height: 30px;
+    }
   }
 `
 
@@ -59,14 +60,10 @@ export const StyleNavLinks = styled.ul`
   flex-direction: column;
   padding: 0;
 
-  transform: translateY(-30px);
-
   @media screen and (min-width: ${desktop}px) {
     align-items: center;
     margin: 0;
     flex-direction: row;
-
-    transform: translateY(0);
   }
 `
 
