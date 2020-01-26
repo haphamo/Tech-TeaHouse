@@ -1,7 +1,7 @@
 import styled from "styled-components"
-import { breakpoints } from "../../theme/constants"
 import { H2 } from "../../theme/typography"
-import { colors } from "../../theme/constants"
+import { colors, breakpoints } from "../../theme/constants"
+const { desktop } = breakpoints
 
 const { white } = colors
 
@@ -10,7 +10,7 @@ const CardSection = styled.section`
   position: relative;
   display: flex;
 
-  @media screen and (min-width: ${breakpoints.tablet}px) {
+  @media screen and (min-width: ${desktop}px) {
     padding: 5rem 1.25rem 8rem 1.25rem;
   }
 `
@@ -61,6 +61,11 @@ const CardTextSection = styled.div`
 
 const CardH2 = styled(H2)`
   margin-top: 0;
+  text-align: center;
+
+  @media screen and (min-width: ${desktop}px) {
+    text-align: left;
+  }
 `
 
 const CardP = styled.p`
