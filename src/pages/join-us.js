@@ -2,10 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import CardLayout from "../components/CardLayout/CardLayout";
 
-export default function GetInTouch() {
+export default function JoinUs() {
   return (
-  <Layout pageName="get-in-touch">
-    <CardLayout pageName='get-in-touch'/>
+  <Layout pageName='join-us'>
+    <CardLayout pageName='join-us'/>
   </Layout>
 
   )
