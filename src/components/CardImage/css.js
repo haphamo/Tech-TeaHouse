@@ -3,7 +3,7 @@ import { H2 } from "../../theme/typography"
 import { colors, breakpoints } from "../../theme/constants"
 const { desktop } = breakpoints
 
-const { white } = colors
+const { white, primaryGreen } = colors
 
 const CardSection = styled.section`
   background-color: ${white};
@@ -71,8 +71,17 @@ const CardH2 = styled(H2)`
 const CardP = styled.p`
   line-height: 2rem;
 `
+const ApplyButton = styled.button`
+  color: ${white};
+  border-radius: 0.5em;
+  background-color: ${primaryGreen};
+  padding: 0.5em 1em 0.5em 1em;
+  font-family: Rubik; sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+`
 
 const Wrapper = styled.div`
   margin: auto;
 `
-export { CardSection, CardPhoto, CardTextSection, CardH2, CardP, Wrapper }
+export { CardSection, CardPhoto, CardTextSection, CardH2, CardP, ApplyButton, Wrapper }

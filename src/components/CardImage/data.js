@@ -1,6 +1,8 @@
 import Photo1 from '../../images/womenintech-6.jpg';
 import Photo2 from '../../images/womenintech-9.jpg';
 
+const GoogleFormForSlack = {link: 'https://forms.gle/wt6bRXsQiBdU2agC7'}
+
 const Causes = {
 	photo       : Photo1,
 	alt         : 'Tech Teahouse members at a women in tech workshop',
@@ -24,4 +26,4 @@ const Event = {
 		'Continue the conversation with us on Slack.'
 };
 
-export { Causes, Event };
+export { Causes, Event, GoogleFormForSlack };

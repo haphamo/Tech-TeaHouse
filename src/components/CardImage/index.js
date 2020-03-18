@@ -6,6 +6,7 @@ import {
   CardTextSection,
   CardH2,
   CardP,
+  ApplyButton,
   Wrapper,
 } from "./css"
 import { colors } from "../../theme/constants"
@@ -41,7 +42,7 @@ const CardImage = props => {
           <CardP>{pointOne}</CardP>
           <CardP>{pointTwo}</CardP>
           <CardP>{pointThree}</CardP>
-          <button style={buttonStyling}>Apply to join !</button>
+          <ApplyButton>Apply to join !</ApplyButton>
         </CardTextSection>
       </Wrapper>
     </CardSection>
