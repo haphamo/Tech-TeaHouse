@@ -13,15 +13,6 @@ import { colors } from "../../theme/constants"
 
 
 const CardImage = props => {
-  const buttonStyling = {
-    color: colors.white,
-    borderRadius: '0.5em',
-    backgroundColor: colors.primaryGreen,
-    padding: '0.5em 1em 0.5em 1em',
-    fontFamily: "Rubik, sans-serif",
-    fontWeight: '500',
-    lineHeight: '20px',
-  }
   const {
     alt,
     headline,
@@ -30,7 +21,6 @@ const CardImage = props => {
     pointTwo,
     pointThree,
     photo,
-    icon
   } = props
   return (
     <CardSection>
