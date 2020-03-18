@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { H3 } from "../../theme/typography"
 import {
   CardSection,
@@ -13,6 +14,7 @@ import { colors } from "../../theme/constants"
 
 
 const CardImage = props => {
+  console.log(props.googleForm)
   const {
     alt,
     headline,
@@ -21,6 +23,7 @@ const CardImage = props => {
     pointTwo,
     pointThree,
     photo,
+    googleForm
   } = props
   return (
     <CardSection>
@@ -32,7 +35,7 @@ const CardImage = props => {
           <CardP>{pointOne}</CardP>
           <CardP>{pointTwo}</CardP>
           <CardP>{pointThree}</CardP>
-          <ApplyButton>Apply to join !</ApplyButton>
+          <a href={googleForm} target='_blank'><ApplyButton>Apply to join !</ApplyButton></a>
         </CardTextSection>
       </Wrapper>
     </CardSection>

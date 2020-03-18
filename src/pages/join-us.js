@@ -15,7 +15,6 @@ export default function JoinUs() {
 				pointOne={Event.pointOne}
 				pointTwo={Event.pointTwo}
         pointThree={Event.pointThree}
-        icon={Event.icon}
         googleForm={GoogleFormForSlack.link}
 			/>
       <CardLayout pageName='join-us'/>
