@@ -1,5 +1,6 @@
 import Photo1 from '../../images/womenintech-6.jpg';
 import Photo2 from '../../images/womenintech-9.jpg';
+import slack from '../../images/slack.png';
 
 const Causes = {
 	photo       : Photo1,
@@ -18,6 +19,7 @@ const Event = {
 	alt         : 'alt',
 	headline    : 'Join the Par-Tea!',
 	headlineTwo : 'Connect with us on Slack',
+	icon				: slack,
 	pointOne    : 'We believe that relationships can be fostered online too.',
 	pointTwo		:	'By joining our Slack channel, you’ll have the opportunity to network with other members and given early access to our sold out events. Our community is built on sharing upcoming events, job/educational opportunities and fun conversation.',
 	pointThree  :
