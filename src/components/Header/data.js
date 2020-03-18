@@ -43,7 +43,7 @@ const data = [
     pageName: "join-us",
     headerOneContent: "Come Join Us",
     paragraphContent:
-      "Thank you for your interest in supporting #TechTeahouse! We’re working together to build an inclusive Toronto tech community. Come join the conversation under our hashtag #TechTeahouse to stay up to date on new events and meetups near you. Let’s brew more diversi-tea together!",
+      "Thank you for your interest in joining us and to build an inclusive Toronto tech community. Come join the conversation under our hashtag #TechTeahouse to stay up to date on new events and meetups near you. Let’s brew more diversi-tea together!",
   },
 ]
 
