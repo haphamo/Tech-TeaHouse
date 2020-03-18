@@ -16,7 +16,10 @@ const CardImage = props => {
     color: colors.white,
     borderRadius: '0.5em',
     backgroundColor: colors.primaryGreen,
-    padding: '0.5em'
+    padding: '0.5em 1em 0.5em 1em',
+    fontFamily: "Rubik, sans-serif",
+    fontWeight: '500',
+    lineHeight: '20px',
   }
   const {
     alt,
