@@ -11,6 +11,7 @@ import {
 
 
 const CardImage = props => {
+  
   const {
     alt,
     headline,
@@ -27,11 +28,11 @@ const CardImage = props => {
         <CardPhoto src={photo} alt={alt} />
         <CardTextSection>
           <CardH2>{headline}</CardH2>
-          <H3>{headlineTwo} <img height='50px' alt='slack' src={icon}></img></H3>
-         
+          <H3>{headlineTwo} <img style={{paddingLeft: '2rem'}} height='50px' alt='slack' src={icon}></img></H3>
           <CardP>{pointOne}</CardP>
           <CardP>{pointTwo}</CardP>
           <CardP>{pointThree}</CardP>
+          <button>Apply to join !</button>
         </CardTextSection>
       </Wrapper>
     </CardSection>
