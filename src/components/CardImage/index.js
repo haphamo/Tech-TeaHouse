@@ -9,6 +9,7 @@ import {
   Wrapper,
 } from "./css"
 
+
 const CardImage = props => {
   const {
     alt,
@@ -18,6 +19,7 @@ const CardImage = props => {
     pointTwo,
     pointThree,
     photo,
+    icon
   } = props
   return (
     <CardSection>
@@ -25,7 +27,8 @@ const CardImage = props => {
         <CardPhoto src={photo} alt={alt} />
         <CardTextSection>
           <CardH2>{headline}</CardH2>
-          <H3>{headlineTwo}</H3>
+          <H3>{headlineTwo} <img height='50px' alt='slack' src={icon}></img></H3>
+         
           <CardP>{pointOne}</CardP>
           <CardP>{pointTwo}</CardP>
           <CardP>{pointThree}</CardP>

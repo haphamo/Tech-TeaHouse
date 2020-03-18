@@ -35,4 +35,5 @@ export const H3 = styled.h3`
   font-size: 1.75rem;
   font-weight: 500;
   color: ${lightBlack};
+  display: flex;
 `

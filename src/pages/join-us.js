@@ -14,7 +14,8 @@ export default function JoinUs() {
 				headlineTwo={Event.headlineTwo}
 				pointOne={Event.pointOne}
 				pointTwo={Event.pointTwo}
-				pointThree={Event.pointThree}
+        pointThree={Event.pointThree}
+        icon={Event.icon}
 			/>
       <CardLayout pageName='join-us'/>
   </Layout>
