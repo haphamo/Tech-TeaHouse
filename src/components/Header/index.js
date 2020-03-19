@@ -3,7 +3,7 @@ import { HeaderSection, HeaderH3, P, HeaderContent } from "./css"
 import { object } from "prop-types"
 import { H1 } from "../../theme/typography"
 import { CTALink } from "../../theme/components"
-import { womenInTechEight as headerImage } from "../../images"
+import { networkingEvent as headerImage } from "../../images"
 
 function Header({ headerData }) {
   const {

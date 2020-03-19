@@ -14,9 +14,9 @@ import {
 } from "./css"
 
 import {
-  womenInTechOne,
+  networkingEvent3,
   eventOne,
-  eventSix,
+  panelist,
   bubbleTeaImg,
   eventSeven,
   eventThree,
@@ -33,15 +33,15 @@ function ImageGallery() {
       </BannerPic>
       <Grid>
         <PicOne>
-          <Img src={womenInTechOne} alt="Picture of Ruiting at an event" />
+          <Img src={networkingEvent3} alt="Picture of Ruiting at an event" />
         </PicOne>
         <PicTwo>
           <Img src={eventOne} alt="The Tech Teahouse group at a Hackathon" />
         </PicTwo>
         <PicThree>
           <Img
-            src={eventSix}
-            alt="A picture of Jen and Ruiting smiling at the Hackathon"
+            src={panelist}
+            alt="picture of Mel with Victoria"
           />
         </PicThree>
         <PicFour>

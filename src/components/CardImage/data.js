@@ -1,5 +1,7 @@
 import Photo1 from '../../images/womenintech-6.jpg';
-import Photo2 from '../../images/womenintech-9.jpg';
+import Photo2 from '../../images/panel-1.jpg';
+// import { womenInTechSix,networkingEvent3 } from '../../images'
+
 
 const Causes = {
 	photo       : Photo1,
@@ -15,13 +17,15 @@ const Causes = {
 
 const Event = {
 	photo       : Photo2,
-	alt         : 'Speaker panel at a Tech Teahouse women in tech workshop',
-	headline    : 'Upcoming Event',
-	headlineTwo : 'Women in Tech - Networking 101',
-	pointOne    : 'TTH will be hosting a panel and workshop with Shopify Toronto!',
-	pointTwo    :
-		'Panelists will discuss topics focused towards networking and branding yourself within a social situation. After, attendees have the opportunity to implement what was learned through a hands-on workshop in smaller groups.',
-	pointThree  : 'Be sure to follow us on social media for updates! Tickets will be limited!'
+	alt         : 'alt',
+	headline    : 'Join the Par-Tea!',
+	headlineTwo : 'Connect with us on Slack',
+	pointOne    : 'We believe that relationships can be fostered online too.',
+	pointTwo		:	'By joining our Slack channel, you’ll have the opportunity to network with other members and given early access to our sold out events. Our community is built on sharing upcoming events, job/educational opportunities and fun conversation.',
+	pointThree  :
+		'Continue the conversation with us on Slack.',
+	buttonText			: 'Apply to join !',
+	buttonLink				:	'https://forms.gle/wt6bRXsQiBdU2agC7',
 };
 
 export { Causes, Event };

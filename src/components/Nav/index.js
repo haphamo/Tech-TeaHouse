@@ -56,8 +56,8 @@ const Nav = () => {
               </NavLink>
             </NavListItem>
             <NavListItem>
-              <NavLink to="/get-in-touch" activeClassName="is-active">
-                Get In Touch
+              <NavLink to="/join-us" activeClassName="is-active">
+                Join Us
               </NavLink>
             </NavListItem>
             {windowWidth > desktop ? (

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { H3 } from "../../theme/typography"
 import {
   CardSection,
@@ -6,10 +7,14 @@ import {
   CardTextSection,
   CardH2,
   CardP,
+  ApplyButton,
   Wrapper,
 } from "./css"
+import { colors } from "../../theme/constants"
+
 
 const CardImage = props => {
+  console.log(props.link)
   const {
     alt,
     headline,
@@ -18,6 +23,8 @@ const CardImage = props => {
     pointTwo,
     pointThree,
     photo,
+    buttonLink,
+    buttonText
   } = props
   return (
     <CardSection>
@@ -29,6 +36,7 @@ const CardImage = props => {
           <CardP>{pointOne}</CardP>
           <CardP>{pointTwo}</CardP>
           <CardP>{pointThree}</CardP>
+          {buttonText && <a href={buttonLink} target='_blank'><ApplyButton>{buttonText}</ApplyButton></a>}
         </CardTextSection>
       </Wrapper>
     </CardSection>

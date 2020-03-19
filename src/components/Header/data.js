@@ -3,7 +3,11 @@ import {
   meetupTwo,
   womenInTechEight,
   womenInTechSeven,
+  panelists,
+  networkingEvent,
+  groupshot,
 } from "../../images"
+
 
 // TAKE pageName PROP FROM LAYOUT.. COMPARE IT AGAINST data.pageName
 
@@ -15,7 +19,7 @@ const data = [
     paragraphContent:
       "Our goal is to champion greater accessibility and diversity across the tech industry by empowering individuals through education and events.",
     buttonContent: "Become a Partner",
-    image: womenInTechEight,
+    image: groupshot,
   },
   {
     pageName: "what-we-do",
@@ -23,7 +27,7 @@ const data = [
     headerTwoContent: "Greater Accessibility and Diversity in Tech",
     paragraphContent:
       "Our goal is to champion greater accessibility and diversity across the tech industry by empowering individuals through education and events.",
-    image: meetupOne,
+    image: networkingEvent,
   },
   {
     pageName: "who-we-are",
@@ -40,10 +44,11 @@ const data = [
     image: womenInTechSeven,
   },
   {
-    pageName: "get-in-touch",
-    headerOneContent: "Get in Touch",
+    pageName: "join-us",
+    headerOneContent: "Come Join Us",
     paragraphContent:
-      "Thank you for your interest in supporting #TechTeahouse! We’re working together to build an inclusive Toronto tech community. Come join the conversation under our hashtag #TechTeahouse to stay up to date on new events and meetups near you. Let’s brew more diversi-tea together!",
+      "Thank you for your interest in joining us and to build an inclusive Toronto tech community. Come join the conversation under our hashtag #TechTeahouse to stay up to date on new events and meetups near you. Let’s brew more diversi-tea together!",
+      image: meetupOne
   },
 ]
 

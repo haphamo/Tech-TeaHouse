@@ -99,7 +99,7 @@ const data = [
     ],
   },
   {
-    pageName: "get-in-touch",
+    pageName: "join-us",
 
     icons: [
       {
