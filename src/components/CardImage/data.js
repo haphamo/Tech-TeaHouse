@@ -1,7 +1,5 @@
-import Photo1 from '../../images/womenintech-6.jpg';
-import Photo2 from '../../images/panel-1.jpg';
-// import { womenInTechSix,networkingEvent3 } from '../../images'
-
+import Photo1 from '../../images/networkingPanel.jpg';
+import Photo2 from '../../images/negotiationsGroupshot.jpg';
 
 const Causes = {
 	photo       : Photo1,
@@ -21,11 +19,11 @@ const Event = {
 	headline    : 'Join the Par-Tea!',
 	headlineTwo : 'Connect with us on Slack',
 	pointOne    : 'We believe that relationships can be fostered online too.',
-	pointTwo		:	'By joining our Slack channel, you’ll have the opportunity to network with other members and given early access to our sold out events. Our community is built on sharing upcoming events, job/educational opportunities and fun conversation.',
-	pointThree  :
-		'Continue the conversation with us on Slack.',
-	buttonText			: 'Apply to join !',
-	buttonLink				:	'https://forms.gle/wt6bRXsQiBdU2agC7',
+	pointTwo    :
+		'By joining our Slack channel, you’ll have the opportunity to network with other members and given early access to our sold out events. Our community is built on sharing upcoming events, job/educational opportunities and fun conversation.',
+	pointThree  : 'Continue the conversation with us on Slack.',
+	buttonText  : 'Apply to join !',
+	buttonLink  : 'https://forms.gle/wt6bRXsQiBdU2agC7'
 };
 
 export { Causes, Event };
