@@ -3,8 +3,10 @@ import {
   meetupTwo,
   womenInTechEight,
   womenInTechSeven,
-  panelists
+  panelists,
+  networkingEvent
 } from "../../images"
+
 
 // TAKE pageName PROP FROM LAYOUT.. COMPARE IT AGAINST data.pageName
 
@@ -24,7 +26,7 @@ const data = [
     headerTwoContent: "Greater Accessibility and Diversity in Tech",
     paragraphContent:
       "Our goal is to champion greater accessibility and diversity across the tech industry by empowering individuals through education and events.",
-    image: panelists,
+    image: networkingEvent,
   },
   {
     pageName: "who-we-are",
