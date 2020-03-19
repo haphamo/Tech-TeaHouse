@@ -1,4 +1,4 @@
-import { meetupOne, meetupTwo, womenInTechSeven, negotiationsGroupshot, womenPanel } from '../../images';
+import { negotiationsPanelists, meetupTwo, womenInTechSeven, negotiationsGroupshot, womenPanel } from '../../images';
 
 // TAKE pageName PROP FROM LAYOUT.. COMPARE IT AGAINST data.pageName
 
@@ -39,7 +39,7 @@ const data = [
 		headerOneContent : 'Come Join Us',
 		paragraphContent :
 			'Thank you for your interest in joining us and to build an inclusive Toronto tech community. Come join the conversation under our hashtag #TechTeahouse to stay up to date on new events and meetups near you. Let’s brew more diversi-tea together!',
-		image            : meetupOne
+		image            : negotiationsPanelists
 	}
 ];
 
