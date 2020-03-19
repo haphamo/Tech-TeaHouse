@@ -4,7 +4,8 @@ import {
   womenInTechEight,
   womenInTechSeven,
   panelists,
-  networkingEvent
+  networkingEvent,
+  groupshot,
 } from "../../images"
 
 
@@ -18,7 +19,7 @@ const data = [
     paragraphContent:
       "Our goal is to champion greater accessibility and diversity across the tech industry by empowering individuals through education and events.",
     buttonContent: "Become a Partner",
-    image: womenInTechEight,
+    image: groupshot,
   },
   {
     pageName: "what-we-do",

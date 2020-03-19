@@ -1,5 +1,6 @@
 import Photo1 from '../../images/womenintech-6.jpg';
 import Photo2 from '../../images/panel-1.jpg';
+// import { womenInTechSix,networkingEvent3 } from '../../images'
 
 
 const Causes = {
