@@ -1,5 +1,5 @@
 import Photo1 from '../../images/womenintech-6.jpg';
-import Photo2 from '../../images/womenintech-9.jpg';
+import Photo2 from '../../images/panel-1.jpg';
 
 const GoogleFormForSlack = {link: 'https://forms.gle/wt6bRXsQiBdU2agC7'}
 
