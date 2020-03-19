@@ -14,7 +14,7 @@ import { colors } from "../../theme/constants"
 
 
 const CardImage = props => {
-  console.log(props.googleForm)
+  console.log(props.link)
   const {
     alt,
     headline,
@@ -23,7 +23,8 @@ const CardImage = props => {
     pointTwo,
     pointThree,
     photo,
-    googleForm
+    buttonLink,
+    buttonText
   } = props
   return (
     <CardSection>
@@ -35,7 +36,7 @@ const CardImage = props => {
           <CardP>{pointOne}</CardP>
           <CardP>{pointTwo}</CardP>
           <CardP>{pointThree}</CardP>
-          <a href={googleForm} target='_blank'><ApplyButton>Apply to join !</ApplyButton></a>
+          {buttonText && <a href={buttonLink} target='_blank'><ApplyButton>{buttonText}</ApplyButton></a>}
         </CardTextSection>
       </Wrapper>
     </CardSection>

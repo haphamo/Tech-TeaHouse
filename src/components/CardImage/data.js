@@ -1,7 +1,6 @@
 import Photo1 from '../../images/womenintech-6.jpg';
 import Photo2 from '../../images/panel-1.jpg';
 
-const GoogleFormForSlack = {link: 'https://forms.gle/wt6bRXsQiBdU2agC7'}
 
 const Causes = {
 	photo       : Photo1,
@@ -23,7 +22,9 @@ const Event = {
 	pointOne    : 'We believe that relationships can be fostered online too.',
 	pointTwo		:	'By joining our Slack channel, you’ll have the opportunity to network with other members and given early access to our sold out events. Our community is built on sharing upcoming events, job/educational opportunities and fun conversation.',
 	pointThree  :
-		'Continue the conversation with us on Slack.'
+		'Continue the conversation with us on Slack.',
+	buttonText			: 'Apply to join !',
+	buttonLink				:	'https://forms.gle/wt6bRXsQiBdU2agC7',
 };
 
-export { Causes, Event, GoogleFormForSlack };
+export { Causes, Event };
