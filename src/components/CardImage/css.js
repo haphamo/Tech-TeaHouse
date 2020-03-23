@@ -79,7 +79,13 @@ const ApplyButton = styled.button`
   font-family: Rubik; sans-serif;
   font-weight: 500;
   line-height: 20px;
+  
+  &:hover {
+    cursor: pointer;
+  }
 `
+
+
 
 const Wrapper = styled.div`
   margin: auto;
