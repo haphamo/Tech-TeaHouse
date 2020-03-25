@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import logo from "../../images/Logo.png"
+import logo from "../../images/Logo-resized.png"
 
 import { CTALink } from "../../theme/components"
 import { breakpoints } from "../../theme/constants"
