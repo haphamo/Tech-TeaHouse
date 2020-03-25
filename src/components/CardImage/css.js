@@ -18,7 +18,7 @@ const CardSection = styled.section`
 const CardPhoto = styled.img`
   @media (min-width: 850px) {
     height: 550px;
-    width: 850px;
+    width: auto;
     position: absolute;
   }
 
