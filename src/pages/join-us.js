@@ -2,7 +2,10 @@ import React from 'react';
 import Layout from '../components/layout';
 import CardLayout from '../components/CardLayout/CardLayout';
 import CardImage from '../components/CardImage';
+import Calendar from '../components/Calendar';
+
 import { Event } from '../components/CardImage/data';
+
 export default function JoinUs() {
 	return (
 		<Layout pageName="join-us">
@@ -18,6 +21,7 @@ export default function JoinUs() {
 				buttonText={Event.buttonText}
 				buttonLink={Event.buttonLink}
 			/>
+			<Calendar />
 		</Layout>
 	);
 }
