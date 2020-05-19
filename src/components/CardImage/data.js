@@ -1,5 +1,17 @@
 import Photo1 from '../../images/networkingPanel.jpg';
 import Photo2 from '../../images/negotiationsGroupshot.jpg';
+import Photo3 from '../../images/networkingGuests.png';
+
+const FollowUs = {
+	photo       : Photo3,
+	alt         : 'Tech Teahouse members at a women in tech workshop',
+	headline    : 'Upcoming Events',
+	headlineTwo : 'Connect with us on Social Media',
+	pointOne    : 'All upcoming Tech Teahouse events will be posted on our LinkedIn, Twitter and Instagram pages.',
+	pointTwo    : 'Tickets are usually sold out within a day so be sure to follow us to stay up-to-date!',
+	buttonText  : 'Connect With Us',
+	buttonLink  : 'https://linktr.ee/tthsocial'
+};
 
 const Causes = {
 	photo       : Photo1,
@@ -13,9 +25,9 @@ const Causes = {
 		'3. Fostering relationships among like-minded individuals to share their experiences and empower each other'
 };
 
-const Event = {
+const Slack = {
 	photo       : Photo2,
-	alt         : 'alt',
+	alt         : 'Tech Teahouse members at a women in tech workshop',
 	headline    : 'Join the Par-Tea!',
 	headlineTwo : 'Connect with us on Slack',
 	pointOne    : 'We believe that relationships can be fostered online too.',
@@ -26,4 +38,4 @@ const Event = {
 	buttonLink  : 'https://forms.gle/wt6bRXsQiBdU2agC7'
 };
 
-export { Causes, Event };
+export { FollowUs, Causes, Slack };
