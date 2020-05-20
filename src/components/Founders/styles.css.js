@@ -12,6 +12,7 @@ const Foundersdiv = styled.div`
     justify-content: space-evenly;
     align-items: center;
     padding-top: 60px;
+    flex-wrap: wrap;
   }
 
   @media (max-width: 769px) {
@@ -28,6 +29,7 @@ const Foundersimg = styled.img`
   width: 250px;
   border: 1px solid black;
   border-radius: 50%;
+  object-fit: cover;
 `
 
 const Foundersp = styled.p`
