@@ -6,6 +6,10 @@ import TMX from '../../images/TMX-logo.png';
 import Mintbean from '../../images/mintbean_logo.png';
 import Swissborg from '../../images/swissborg-logo.png';
 
+const CollabHeadline = {
+	headline : 'Collaborations'
+};
+
 const CollabProfileOne = [
 	{
 		photo : Shopify,
@@ -36,8 +40,4 @@ const CollabProfileTwo = [
 	}
 ];
 
-const CollabHeadline = {
-	headline : 'Collaborations'
-};
-
-export { CollabProfileOne, CollabProfileTwo, CollabHeadline };
+export { CollabHeadline, CollabProfileOne, CollabProfileTwo };
