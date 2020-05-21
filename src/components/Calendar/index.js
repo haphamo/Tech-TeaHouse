@@ -5,7 +5,7 @@ import { CalendarSection, Calendarh1, Calendarp } from './css.js';
 const Calendar = () => {
 	const { headline, pointOne, pointTwo, pointThree, pointFour } = CalendarIntro;
 	return (
-		<CalendarSection>
+		<CalendarSection id="calendar">
 			<Calendarh1>{headline}</Calendarh1>
 			<Calendarp>{pointOne}</Calendarp>
 			<Calendarp>{pointTwo}</Calendarp>

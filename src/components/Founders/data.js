@@ -2,6 +2,7 @@
 import Jen from '../../images/headshot-jen.jpg';
 import Therese from '../../images/headshot-therese.jpg';
 import Ruiting from '../../images/headshot-ruiting.jpg';
+import Dasha from '../../images/headshot-dasha.jpg';
 
 const FoundersProfile = [
 	{
@@ -18,11 +19,16 @@ const FoundersProfile = [
 		photo   : Ruiting,
 		name    : 'Ruiting Li',
 		profile : 'https://www.linkedin.com/in/ruitingli/'
+	},
+	{
+		photo   : Dasha,
+		name    : 'Dasha Frumovitch',
+		profile : 'https://www.linkedin.com/in/dasha-frumovitch/'
 	}
 ];
 
 const FoundersTitle = {
-	headline : 'The Founders'
+	headline : 'Our Team'
 };
 
 export { FoundersProfile, FoundersTitle };
